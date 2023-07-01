@@ -20,6 +20,7 @@
 		81D6972A2A502CC900D545D8 /* PokemonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D697292A502CC900D545D8 /* PokemonType.swift */; };
 		81D6972C2A50367500D545D8 /* PokemonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D6972B2A50367500D545D8 /* PokemonItemView.swift */; };
 		81D6972F2A50661200D545D8 /* PokemonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D6972E2A50661200D545D8 /* PokemonsView.swift */; };
+		81D697312A506A8D00D545D8 /* PokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D697302A506A8D00D545D8 /* PokemonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		81D697292A502CC900D545D8 /* PokemonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonType.swift; sourceTree = "<group>"; };
 		81D6972B2A50367500D545D8 /* PokemonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonItemView.swift; sourceTree = "<group>"; };
 		81D6972E2A50661200D545D8 /* PokemonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsView.swift; sourceTree = "<group>"; };
+		81D697302A506A8D00D545D8 /* PokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				81D697072A501CA500D545D8 /* ContentView.swift */,
 				81D6972B2A50367500D545D8 /* PokemonItemView.swift */,
 				81D6972E2A50661200D545D8 /* PokemonsView.swift */,
+				81D697302A506A8D00D545D8 /* PokemonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				81D697082A501CA500D545D8 /* ContentView.swift in Sources */,
 				81D697062A501CA500D545D8 /* PokedexApp.swift in Sources */,
 				81D697192A5025AF00D545D8 /* ApiService.swift in Sources */,
+				81D697312A506A8D00D545D8 /* PokemonView.swift in Sources */,
 				81D6971C2A5025E200D545D8 /* Constants.swift in Sources */,
 				81D6972A2A502CC900D545D8 /* PokemonType.swift in Sources */,
 			);

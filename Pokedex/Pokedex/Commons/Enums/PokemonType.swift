@@ -24,6 +24,8 @@ extension PokemonType {
             return Color("WaterColor")
         case .electric:
             return Color("ElectricColor")
+        case .bug:
+            return Color("BugColor")
         
         default:
             return Color("GreyColor") // Une couleur par défaut pour les cas non gérés
@@ -40,6 +42,8 @@ extension PokemonType {
             return Color("WaterLightColor")
         case .electric:
             return Color("ElectricLightColor")
+        case .bug:
+            return Color("BugLightColor")
         
         default:
             return Color("GreyColor") // Une couleur par défaut pour les cas non gérés

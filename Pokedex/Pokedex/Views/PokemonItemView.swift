@@ -91,7 +91,7 @@ struct PokemonItemView_Previews: PreviewProvider {
             name: "Yvysaur",
             types: [.grass, .poison])
         
-        HStack {
+        VStack {
             PokemonItemView(pokemon:bulbasaur).previewLayout(.sizeThatFits)
             PokemonItemView(pokemon:ivysaur).previewLayout(.sizeThatFits)
         }.padding(.all, 18)
