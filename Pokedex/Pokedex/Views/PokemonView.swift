@@ -10,8 +10,11 @@ import SwiftUI
 struct PokemonView: View {
     
     let pokemon : Pokemon
+    @ObservedObject var pokemonViewModel = PokemonViewModel()
     
     var body: some View {
+        
+        
         VStack {
             VStack {
                 HStack {
@@ -51,15 +54,20 @@ struct PokemonView: View {
             VStack {
                 HStack {
                     Spacer()
-                    Text("Hello")
+                    Text(pokemonViewModel.pokemon?.description ?? "")
+                    Spacer()
                 }
                 Spacer()
             }
+            .padding(.all, 40)
             .background(.white)
             .cornerRadius(12)
         }
         .ignoresSafeArea(.all)
         .background(pokemon.types.first?.color() ?? Color("GreyColor"))
+        .onAppear(){
+            pokemonViewModel.getPokemon(id: pokemon.id)
+        }
     }
 }
 
@@ -71,7 +79,11 @@ struct PokemonView_Previews: PreviewProvider {
         let bulbasaur = Pokemon(
             id: 1,
             name: "Bulbasaur",
-            types: [.grass, .poison])
+            types: [.grass, .poison],
+            description : "For some time after its birth, it\ngrows by gaining nourishment from\nthe seed on its back.",
+            height: 7,
+            weight: 69
+        )
         
         
         PokemonView(pokemon: bulbasaur)

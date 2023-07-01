@@ -10,6 +10,6 @@ import Foundation
 
 struct Constants {
     
-    static let pokeAPIBaseUrl = ""
+    static let pokeAPIBaseUrl = "https://pokeapi.co/api/v2/"
     static let pokemonsJSONFilePath = "Pokemons"
 }

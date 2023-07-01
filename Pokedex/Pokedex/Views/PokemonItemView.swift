@@ -84,12 +84,20 @@ struct PokemonItemView_Previews: PreviewProvider {
         let bulbasaur = Pokemon(
             id: 1,
             name: "Bulbasaur",
-            types: [.grass, .poison])
+            types: [.grass, .poison],
+            description: "",
+            height: 0,
+            weight: 0
+        )
         
         let ivysaur = Pokemon(
             id: 2,
             name: "Yvysaur",
-            types: [.grass, .poison])
+            types: [.grass, .poison],
+            description: "",
+            height: 0,
+            weight: 0
+        )
         
         VStack {
             PokemonItemView(pokemon:bulbasaur).previewLayout(.sizeThatFits)

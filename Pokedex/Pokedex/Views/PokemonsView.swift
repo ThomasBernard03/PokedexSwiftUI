@@ -16,20 +16,20 @@ struct PokemonsView: View {
         NavigationView {
             ZStack {
                 VStack {
-                    List {
-                        ForEach(pokemonsViewModel.pokemons) { pokemon in
+                    List(pokemonsViewModel.pokemons) { pokemon in
                             NavigationLink(destination: PokemonView(pokemon: pokemon)) {
                                 PokemonItemView(pokemon: pokemon)
-                            }.buttonStyle(.plain)
-                        }.listRowSeparator(.hidden)
-                    }.listStyle(.plain)
+                                    .listRowSeparator(.hidden)
+                            }
+                        }.listStyle(.plain)
+                    }
                         
                 }
             }.onAppear(){
                 pokemonsViewModel.getPokemons()
             }
         }
-    }
+    
 }
 
 

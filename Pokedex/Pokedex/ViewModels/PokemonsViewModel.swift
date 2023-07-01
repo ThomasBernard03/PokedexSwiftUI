@@ -18,10 +18,12 @@ class PokemonsViewModel : ObservableObject {
     
     func getPokemons(){
         
-        let pokemons : [Pokemon]? = jsonService.readJsonFile(jsonPathFile: Constants.pokemonsJSONFilePath)
+        let pokemons : [PokemonJSONResponse]? = jsonService.readJsonFile(jsonPathFile: Constants.pokemonsJSONFilePath)
         
         if pokemons != nil {
-            self.pokemons = pokemons!
+            self.pokemons = pokemons!.map({ pokemonJSONResponse in
+                Pokemon(from: pokemonJSONResponse)
+            })
         }
     }
     
