@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import PokemonAPI
 
 
 class PokemonsViewModel : ObservableObject {
     
-    @Published var pokemons : [Pokemon] = []
+    @Published var pokemons : [PokemonListItem] = []
     
     let apiService = APIService()
     let jsonService = JsonService()
@@ -22,7 +23,7 @@ class PokemonsViewModel : ObservableObject {
         
         if pokemons != nil {
             self.pokemons = pokemons!.map({ pokemonJSONResponse in
-                Pokemon(from: pokemonJSONResponse)
+                PokemonListItem(from: pokemonJSONResponse)
             })
         }
     }

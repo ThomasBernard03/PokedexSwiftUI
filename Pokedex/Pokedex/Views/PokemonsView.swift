@@ -17,7 +17,7 @@ struct PokemonsView: View {
             ZStack {
                 VStack {
                     List(pokemonsViewModel.pokemons) { pokemon in
-                            NavigationLink(destination: PokemonView(pokemon: pokemon)) {
+                        NavigationLink(destination: PokemonView(pokemonId: pokemon.id)) {
                                 PokemonItemView(pokemon: pokemon)
                                     .listRowSeparator(.hidden)
                             }

@@ -26,15 +26,7 @@ struct Pokemon : Decodable, Identifiable {
         self.height = height
         self.weight = weight
     }
-    
-    init(from response: PokemonJSONResponse) {
-        self.id = response.id
-        self.name = response.name
-        self.types = response.types
-        self.description = ""
-        self.weight = 0
-        self.height = 0
-    }
+
     
     init(from response: PokemonAPIResponse) {
         self.id = response.id

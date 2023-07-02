@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PokemonItemView: View {
     
-    let pokemon : Pokemon
+    let pokemon : PokemonListItem
     
     var body: some View {
         VStack {
@@ -81,22 +81,16 @@ struct PokemonItemView: View {
 struct PokemonItemView_Previews: PreviewProvider {
     static var previews: some View {
         
-        let bulbasaur = Pokemon(
+        let bulbasaur = PokemonListItem(
             id: 1,
             name: "Bulbasaur",
-            types: [.grass, .poison],
-            description: "",
-            height: 0,
-            weight: 0
+            types: [.grass, .poison]
         )
         
-        let ivysaur = Pokemon(
+        let ivysaur = PokemonListItem(
             id: 2,
             name: "Yvysaur",
-            types: [.grass, .poison],
-            description: "",
-            height: 0,
-            weight: 0
+            types: [.grass, .poison]
         )
         
         VStack {

@@ -5,6 +5,7 @@
 //  Created by Thomas Bernard on 01/07/2023.
 //
 
+import PokemonAPI
 import Foundation
 
 
@@ -17,6 +18,7 @@ class PokemonViewModel : ObservableObject {
     
     
     func getPokemon(id : Int){
+    
         
         apiService.fetchResource(url: "\(Constants.pokeAPIBaseUrl)pokemon/\(id)") { (response : PokemonAPIResponse?) in
             
