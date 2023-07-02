@@ -53,10 +53,35 @@ struct PokemonView: View {
                 .padding(.top, 50)
             VStack {
                 HStack {
-                    Spacer()
                     Text(pokemonViewModel.pokemon?.description ?? "")
-                    Spacer()
                 }
+                
+                HStack{
+                    
+                    VStack {
+                        Text("Height")
+                            .foregroundColor(Color("GreyColor"))
+                        
+                        Text("\(pokemonViewModel.pokemon?.height ?? 0) cm")
+                    }
+                
+                    Spacer()
+                    
+                    VStack {
+                        Text("Weight")
+                            .foregroundColor(Color("GreyColor"))
+                        
+                        Text("\(pokemonViewModel.pokemon?.weight ?? 0) kg")
+                    }
+                    
+                    
+                }
+                .padding(.all, 40)
+                .background(.white)
+                .cornerRadius(16)
+                .shadow(color: Color("ShadowColor"), radius: 4, x: -2, y: 2)
+                
+                
                 Spacer()
             }
             .padding(.all, 40)

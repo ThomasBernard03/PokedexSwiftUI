@@ -15,5 +15,10 @@ struct SpeciesAPIResponse : Decodable {
     
     struct SpeciesFlavorTextEntryAPIResponse : Decodable {
         let flavor_text : String
+        let language : SpeciesFlavorTextEntryLanguageAPIResponse
+        
+        struct SpeciesFlavorTextEntryLanguageAPIResponse : Decodable {
+            let name : String
+        }
     }
 }

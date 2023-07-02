@@ -29,7 +29,8 @@ class PokemonViewModel : ObservableObject {
                     if speciesResponse != nil {
                         DispatchQueue.main.async {
                             self.pokemon = Pokemon(from: pokemonResponse!)
-                            self.pokemon?.description = speciesResponse!.flavor_text_entries.first?.flavor_text ?? ""
+                            self.pokemon?.description =
+                            speciesResponse!.flavor_text_entries.last(where: { $0.language.name == "en" })?.flavor_text.replacingOccurrences(of: "\n", with: "") ?? ""
                         }
                     }
                 }
