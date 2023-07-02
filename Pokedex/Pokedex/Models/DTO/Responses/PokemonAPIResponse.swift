@@ -13,10 +13,22 @@ struct PokemonAPIResponse : Decodable {
     let height : Int
     let weight : Int
     let species : PokemonSpeciesAPIResponse
+    let types : [PokemonTypesAPIResponse]
     
     
     struct PokemonSpeciesAPIResponse : Decodable {
         let name : String
         let url : String
+    }
+    
+    struct PokemonTypesAPIResponse : Decodable {
+        let slot : Int
+        let type : PokemonTypesDetailAPIResponse
+        
+        
+        struct PokemonTypesDetailAPIResponse : Decodable {
+            let name : PokemonType
+            let url : String
+        }
     }
 }

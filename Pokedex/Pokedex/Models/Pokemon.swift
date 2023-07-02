@@ -31,10 +31,10 @@ struct Pokemon : Decodable, Identifiable {
     init(from response: PokemonAPIResponse) {
         self.id = response.id
         self.name = response.name
-        self.types = []
+        self.types = response.types.map { $0.type.name }
         self.description = ""
         self.weight = response.weight
-        self.height = 0
+        self.height = response.height
     }
 }
 
