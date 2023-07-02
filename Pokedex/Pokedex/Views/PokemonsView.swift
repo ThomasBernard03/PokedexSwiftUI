@@ -19,13 +19,23 @@ struct PokemonsView: View {
                     List(pokemonsViewModel.pokemons) { pokemon in
                         NavigationLink(destination: PokemonView(pokemonId: pokemon.id)) {
                                 PokemonItemView(pokemon: pokemon)
+                                
                                     .listRowSeparator(.hidden)
                             }
                         }.listStyle(.plain)
                     }
                         
                 }
-            }.onAppear(){
+                .navigationTitle("Pokedex")
+                .navigationBarTitleDisplayMode(.automatic)
+                .toolbar {
+                    HStack {
+                        Image(systemName: "slider.horizontal.3")
+                    }
+
+                }
+            }
+        .onAppear(){
                 pokemonsViewModel.getPokemons()
             }
         }

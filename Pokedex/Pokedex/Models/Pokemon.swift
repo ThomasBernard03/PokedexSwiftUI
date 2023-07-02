@@ -16,9 +16,9 @@ struct Pokemon : Decodable, Identifiable {
     let types : [PokemonType]
     var description : String
     var height : Int
-    var weight : Int
+    var weight : Float
     
-    init(id: Int, name: String, types: [PokemonType], description: String, height: Int, weight: Int) {
+    init(id: Int, name: String, types: [PokemonType], description: String, height: Int, weight: Float) {
         self.id = id
         self.name = name
         self.types = types
@@ -33,8 +33,8 @@ struct Pokemon : Decodable, Identifiable {
         self.name = response.name
         self.types = response.types.map { $0.type.name }
         self.description = ""
-        self.weight = response.weight
-        self.height = response.height
+        self.weight = Float(response.weight) / 10
+        self.height = response.height * 10
     }
 }
 

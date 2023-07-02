@@ -14,7 +14,7 @@ struct PokemonView: View {
     
     var body: some View {
     
-    
+
         VStack {
             VStack {
                 HStack {
@@ -49,34 +49,40 @@ struct PokemonView: View {
                         Text("")
                     }
                 }
-            }.padding(.all, 20)
-                .padding(.top, 50)
-            VStack {
+            }.padding(.horizontal, 20)
+            VStack(spacing: 30) {
                 HStack {
                     Text(pokemonViewModel.pokemon?.description ?? "")
                 }
                 
-                HStack{
+                HStack(){
                     
                     VStack {
                         Text("Height")
-                            .foregroundColor(Color("GreyColor"))
+                            .foregroundColor(.black)
+                            .padding(.bottom, 10)
                         
                         Text("\(pokemonViewModel.pokemon?.height ?? 0) cm")
+                            .foregroundColor(pokemonViewModel.pokemon?.types.first?.color())
+                            .fontWeight(.bold)
                     }
                 
                     Spacer()
                     
                     VStack {
                         Text("Weight")
-                            .foregroundColor(Color("GreyColor"))
+                            .foregroundColor(.black)
+                            .padding(.bottom, 10)
                         
-                        Text("\(pokemonViewModel.pokemon?.weight ?? 0) kg")
+                        Text("\(String(format: "%.2f", (pokemonViewModel.pokemon?.weight ?? 0))) kg")
+                            .foregroundColor(pokemonViewModel.pokemon?.types.first?.color())
+                            .fontWeight(.bold)
                     }
                     
                     
                 }
-                .padding(.all, 40)
+                .padding(.horizontal, 40)
+                .padding(.vertical, 20)
                 .background(.white)
                 .cornerRadius(16)
                 .shadow(color: Color("ShadowColor"), radius: 4, x: -2, y: 2)
@@ -84,14 +90,17 @@ struct PokemonView: View {
                 
                 Spacer()
             }
-            .padding(.all, 40)
+            .padding(.all, 20)
             .background(.white)
             .cornerRadius(12)
         }
-        .ignoresSafeArea(.all)
         .background(pokemonViewModel.pokemon?.types.first?.color() ?? Color("GreyColor"))
         .onAppear(){
             pokemonViewModel.getPokemon(id: pokemonId)
+        }
+        .toolbar{
+            Image(systemName: "heart")
+                .foregroundColor(.white)
         }
     }
 
