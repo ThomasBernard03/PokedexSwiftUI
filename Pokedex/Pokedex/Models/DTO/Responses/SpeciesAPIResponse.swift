@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+
+struct SpeciesAPIResponse : Decodable {
+    
+    let flavor_text_entries : [SpeciesFlavorTextEntryAPIResponse]
+    
+    
+    struct SpeciesFlavorTextEntryAPIResponse : Decodable {
+        let flavor_text : String
+    }
+}

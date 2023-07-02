@@ -20,11 +20,18 @@ class PokemonViewModel : ObservableObject {
     func getPokemon(id : Int){
     
         
-        apiService.fetchResource(url: "\(Constants.pokeAPIBaseUrl)pokemon/\(id)") { (response : PokemonAPIResponse?) in
+        apiService.fetchResource(url: "\(Constants.pokeAPIBaseUrl)pokemon/\(id)") { (pokemonResponse : PokemonAPIResponse?) in
             
-            if response != nil {
-                DispatchQueue.main.async {
-                    self.pokemon = Pokemon(from: response!)
+            if pokemonResponse != nil {
+                
+                self.apiService.fetchResource(url: "\(Constants.pokeAPIBaseUrl)pokemon-species/\(id)") { (speciesResponse : SpeciesAPIResponse?) in
+                    
+                    if speciesResponse != nil {
+                        DispatchQueue.main.async {
+                            self.pokemon = Pokemon(from: pokemonResponse!)
+                            self.pokemon?.description = speciesResponse!.flavor_text_entries.first?.flavor_text ?? ""
+                        }
+                    }
                 }
             }
         }
