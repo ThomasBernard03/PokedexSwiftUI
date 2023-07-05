@@ -31,7 +31,9 @@ struct PokemonItemView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 120, height: 120)
                     } placeholder: {
-                        Text("")
+                        Image("Pokeball")
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 120, height: 120)
                     }
                 }
 

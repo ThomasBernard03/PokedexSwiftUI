@@ -13,97 +13,73 @@ struct PokemonView: View {
     @ObservedObject var pokemonViewModel = PokemonViewModel()
     
     var body: some View {
-    
 
         VStack {
-            VStack {
-                HStack {
-                    Text(pokemonViewModel.pokemon?.name ?? "")
-                        .foregroundColor(.white)
-                        .font(.title)
-    
-                    Spacer()
-    
-                    Text("#\(String(format: "%03d", pokemonViewModel.pokemon?.id ?? 0))")
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-    
-                }
-                HStack {
-                    ForEach(pokemonViewModel.pokemon?.types ?? [], id: \.self) { type in
-                        Text(type.rawValue)
-                            .foregroundColor(.white)
-                            .padding(.all, 10)
-                        .background(pokemonViewModel.pokemon?.types.first?.lightColor() ?? Color("GreyColor"))
-                            .cornerRadius(12)
-                    }
-                    Spacer()
-                }
-                VStack {
-                    AsyncImage(url: URL(string:pokemonViewModel.pokemon?.image ?? "")) { image in
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 200, height: 200)
-                    } placeholder: {
-                        Text("")
-                    }
-                }
-            }.padding(.horizontal, 20)
-            VStack(spacing: 30) {
-                HStack {
-                    Text(pokemonViewModel.pokemon?.description ?? "")
-                }
-                
-                HStack(){
+            if let pokemon = pokemonViewModel.pokemon {
+                PokemonPreviewView(pokemon: pokemon)
                     
-                    VStack {
-                        Text("Height")
-                            .foregroundColor(.black)
-                            .padding(.bottom, 10)
-                        
-                        Text("\(pokemonViewModel.pokemon?.height ?? 0) cm")
-                            .foregroundColor(pokemonViewModel.pokemon?.types.first?.color())
-                            .fontWeight(.bold)
-                    }
-                
-                    Spacer()
-                    
-                    VStack {
-                        Text("Weight")
-                            .foregroundColor(.black)
-                            .padding(.bottom, 10)
-                        
-                        Text("\(String(format: "%.2f", (pokemonViewModel.pokemon?.weight ?? 0))) kg")
-                            .foregroundColor(pokemonViewModel.pokemon?.types.first?.color())
-                            .fontWeight(.bold)
-                    }
-                    
-                    
-                }
-                .padding(.horizontal, 40)
-                .padding(.vertical, 20)
-                .background(.white)
-                .cornerRadius(16)
-                .shadow(color: Color("ShadowColor"), radius: 4, x: -2, y: 2)
-                
-                
-                Spacer()
             }
-            .padding(.all, 20)
-            .background(.white)
-            .cornerRadius(12)
+        
         }
-        .background(pokemonViewModel.pokemon?.types.first?.color() ?? Color("GreyColor"))
-        .onAppear(){
-            pokemonViewModel.getPokemon(id: pokemonId)
-        }
+        .padding(.horizontal, 20)
+        .background(pokemonViewModel.pokemon?.types.first?.color() ?? .white)
         .toolbar{
             Image(systemName: "heart")
                 .foregroundColor(.white)
         }
-    }
+        .onAppear(){
+            pokemonViewModel.getPokemon(id: pokemonId)
+        }
+        
 
+    }
+}
+
+
+struct PokemonPreviewView : View {
+    let pokemon : Pokemon
+    
+    var body : some View {
+        VStack {
+            
+            HStack {
+                Text(pokemon.name)
+                    .foregroundColor(.white)
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                Spacer()
+                
+                Text("#\(String(format: "%03d", pokemon.id))")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+            }
+            
+            HStack {
+                ForEach(pokemon.types, id: \.self) { type in
+                    Text(type.rawValue)
+                        .foregroundColor(.white)
+                        .padding(.all, 10)
+                        .background(pokemon.types.first?.lightColor() ?? Color("GreyColor"))
+                        .cornerRadius(12)
+                }
+                
+                Spacer()
+            }
+            
+            AsyncImage(url: URL(string:pokemon.image)) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
+            } placeholder: {
+                Image("Pokeball")
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
+            }
+            
+        }.background(.red)
+    }
 }
 
 struct PokemonView_Previews: PreviewProvider {
@@ -111,8 +87,9 @@ struct PokemonView_Previews: PreviewProvider {
     
     
     static var previews: some View {
-        
-        
-        PokemonView(pokemonId: 1)
+        PokemonView(pokemonId: 1).previewLayout(.sizeThatFits)
     }
 }
+
+
+

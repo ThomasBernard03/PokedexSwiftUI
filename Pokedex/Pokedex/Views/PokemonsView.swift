@@ -10,18 +10,35 @@ import SwiftUI
 struct PokemonsView: View {
     
     @ObservedObject var pokemonsViewModel = PokemonsViewModel()
+    @State private var searchText = ""
     
     
     var body: some View {
         NavigationView {
             ZStack {
                 VStack {
+                    
+                    TextField("Search a pokemon", text: $searchText)
+                        .padding(16)
+                        .padding(.horizontal, 45)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(40)
+                        .overlay(
+                            HStack {
+                                Image(systemName: "magnifyingglass")
+                                    .foregroundColor(Color("DarkGreyColor"))
+                                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                                    .padding(.horizontal, 20)
+
+                            }
+                        )
+                        .padding(.horizontal, 20)
+                    
+                    
                     List(pokemonsViewModel.pokemons) { pokemon in
                         NavigationLink(destination: PokemonView(pokemonId: pokemon.id)) {
                                 PokemonItemView(pokemon: pokemon)
-                                
-                                    .listRowSeparator(.hidden)
-                            }
+                            }.listRowSeparator(.hidden)
                         }.listStyle(.plain)
                     }
                         
