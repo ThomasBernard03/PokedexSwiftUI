@@ -13,74 +13,87 @@ struct PokemonView: View {
     @ObservedObject var pokemonViewModel = PokemonViewModel()
     
     var body: some View {
-
-        VStack {
-            if let pokemon = pokemonViewModel.pokemon {
-                PokemonPreviewView(pokemon: pokemon)
+        
+        ZStack {
+            
+            VStack {
+                VStack {
+                    HStack {
+                        Text("#\(String(format: "%03d", pokemonViewModel.pokemon?.id ?? 0))")
+                            .foregroundColor(.white)
+                            .fontWeight(.bold)
+                        Spacer()
+                    }
                     
-            }
-        
-        }
-        .padding(.horizontal, 20)
-        .background(pokemonViewModel.pokemon?.types.first?.color() ?? .white)
-        .toolbar{
-            Image(systemName: "heart")
-                .foregroundColor(.white)
-        }
-        .onAppear(){
-            pokemonViewModel.getPokemon(id: pokemonId)
-        }
-        
+                    HStack {
+                        Text("Bulbasaur")
+                            .foregroundColor(.white)
+                            .font(.title)
+                            .fontWeight(.bold)
+                        Spacer()
+                    }
+                    
+                    HStack {
+                        ForEach(pokemonViewModel.pokemon?.types ?? [], id: \.self) { type in
+                            Text(type.rawValue)
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .padding(.horizontal, 20)
+                                .padding(.vertical, 5)
+                                .background(Color("TypeBackgroundColor"))
+                                .cornerRadius(12)
+                        }
+                        
+                        Spacer()
+                    }
 
-    }
-}
-
-
-struct PokemonPreviewView : View {
-    let pokemon : Pokemon
-    
-    var body : some View {
-        VStack {
-            
-            HStack {
-                Text(pokemon.name)
-                    .foregroundColor(.white)
-                    .font(.title)
-                    .fontWeight(.bold)
-                
-                Spacer()
-                
-                Text("#\(String(format: "%03d", pokemon.id))")
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-            }
-            
-            HStack {
-                ForEach(pokemon.types, id: \.self) { type in
-                    Text(type.rawValue)
-                        .foregroundColor(.white)
-                        .padding(.all, 10)
-                        .background(pokemon.types.first?.lightColor() ?? Color("GreyColor"))
-                        .cornerRadius(12)
+                    AsyncImage(url: URL(string:pokemonViewModel.pokemon?.image ?? "")) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 200, height: 200)
+                    } placeholder: {
+                        Image("Pokeball")
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 200, height: 200)
+                    }
                 }
+                .padding(.all, 20)
                 
-                Spacer()
+                
+                VStack {
+                    HStack {
+                        Text(pokemonViewModel.pokemon?.description ?? "")
+                    }
+                    
+                }
+                .frame(maxWidth: .infinity, maxHeight : .infinity)
+                .padding(.all, 20)
+                .background()
+                .cornerRadius(20)
+                    
+
+                
+
+
+                
+
             }
+            .frame(maxWidth: .infinity, alignment: .topLeading)
+
             
-            AsyncImage(url: URL(string:pokemon.image)) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200, height: 200)
-            } placeholder: {
-                Image("Pokeball")
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200, height: 200)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+        .padding(.top, 80)
+        .background(pokemonViewModel.pokemon?.types.first?.color())
+        .edgesIgnoringSafeArea(.all)
+            .onAppear(){
+                pokemonViewModel.getPokemon(id: pokemonId)
             }
-            
-        }.background(.red)
+        
     }
 }
+
 
 struct PokemonView_Previews: PreviewProvider {
 

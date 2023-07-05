@@ -36,11 +36,16 @@ struct PokemonsView: View {
                     
                     
                     List(pokemonsViewModel.pokemons) { pokemon in
-                        NavigationLink(destination: PokemonView(pokemonId: pokemon.id)) {
+                        ZStack {
+                            NavigationLink(destination: PokemonView(pokemonId: pokemon.id)) {
+                                    EmptyView()
+                                }
+                            
                                 PokemonItemView(pokemon: pokemon)
+                                
                             }.listRowSeparator(.hidden)
                         }.listStyle(.plain)
-                    }
+
                         
                 }
                 .navigationTitle("Pokedex")

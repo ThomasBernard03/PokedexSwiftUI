@@ -53,7 +53,7 @@ struct PokemonItemView: View {
                                     Text(type.rawValue)
                                         .foregroundColor(.white)
                                         .padding(.all, 10)
-                                        .background(pokemon.types.first?.lightColor() ?? Color("GreyColor"))
+                                        .background(Color("TypeBackgroundColor"))
                                         .cornerRadius(12)
                                     Spacer()
                                 }

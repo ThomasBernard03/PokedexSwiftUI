@@ -26,27 +26,29 @@ extension PokemonType {
             return Color("ElectricColor")
         case .bug:
             return Color("BugColor")
+        case .normal:
+            return Color("NormalColor")
+        case .poison:
+            return Color("PoisonColor")
+        case .ground:
+            return Color("GroundColor")
+        case .fighting:
+            return Color("FightingColor")
+        case .fairy:
+            return Color("FairyColor")
+        case .dragon:
+            return Color("DragonColor")
+        case .ice:
+            return Color("IceColor")
+        case .rock:
+            return Color("RockColor")
+        case .ghost:
+            return Color("GhostColor")
+        case .psychic:
+            return Color("PsychicColor")
         
         default:
-            return Color("GreyColor") // Une couleur par défaut pour les cas non gérés
-        }
-    }
-    
-    func lightColor() -> Color {
-        switch self {
-        case .fire:
-            return Color("FireLightColor")
-        case .grass:
-            return Color("GrassLightColor")
-        case .water:
-            return Color("WaterLightColor")
-        case .electric:
-            return Color("ElectricLightColor")
-        case .bug:
-            return Color("BugLightColor")
-        
-        default:
-            return Color("GreyColor") // Une couleur par défaut pour les cas non gérés
+            return Color("GreyColor")
         }
     }
 }
