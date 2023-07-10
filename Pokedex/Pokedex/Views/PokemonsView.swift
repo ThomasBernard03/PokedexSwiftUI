@@ -29,7 +29,7 @@ struct PokemonsView: View {
                                     .foregroundColor(Color("DarkGreyColor"))
                                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                                     .padding(.horizontal, 20)
-
+                                
                             }
                         )
                         .padding(.horizontal, 20)
@@ -38,15 +38,15 @@ struct PokemonsView: View {
                     List(pokemonsViewModel.pokemons) { pokemon in
                         ZStack {
                             NavigationLink(destination: PokemonView(pokemonId: pokemon.id)) {
-                                    EmptyView()
-                                }
+                                EmptyView()
+                            }
                             
-                                PokemonItemView(pokemon: pokemon)
-                                
-                            }.listRowSeparator(.hidden)
-                        }.listStyle(.plain)
-
-                        
+                            PokemonItemView(pokemon: pokemon)
+                            
+                        }.listRowSeparator(.hidden)
+                    }.listStyle(.plain)
+                    
+                    
                 }
                 .navigationTitle("Pokedex")
                 .navigationBarTitleDisplayMode(.automatic)
@@ -54,13 +54,14 @@ struct PokemonsView: View {
                     HStack {
                         Image(systemName: "slider.horizontal.3")
                     }
-
+                    
                 }
             }
-        .onAppear(){
+            .onAppear(){
                 pokemonsViewModel.getPokemons()
             }
         }
+    }
     
 }
 
