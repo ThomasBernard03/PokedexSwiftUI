@@ -9,8 +9,7 @@ import SwiftUI
 
 struct PokemonView: View {
     
-    let pokemonId : Int
-    @ObservedObject var pokemonViewModel = PokemonViewModel()
+    let pokemon : Pokemon
     
     var body: some View {
         
@@ -19,7 +18,7 @@ struct PokemonView: View {
             VStack {
                 VStack {
                     HStack {
-                        Text("#\(String(format: "%03d", pokemonViewModel.pokemon?.id ?? 0))")
+                        Text("#\(String(format: "%03d", pokemon.id))")
                             .foregroundColor(.white)
                             .fontWeight(.bold)
                         Spacer()
@@ -34,7 +33,7 @@ struct PokemonView: View {
                     }
                     
                     HStack {
-                        ForEach(pokemonViewModel.pokemon?.types ?? [], id: \.self) { type in
+                        ForEach(pokemon.types, id: \.self) { type in
                             Text(type.rawValue)
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
@@ -47,7 +46,7 @@ struct PokemonView: View {
                         Spacer()
                     }
 
-                    AsyncImage(url: URL(string:pokemonViewModel.pokemon?.image ?? "")) { image in
+                    AsyncImage(url: URL(string:pokemon.sprites.frontDefaultOfficialArtwork ?? "")) { image in
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fit)
@@ -63,7 +62,7 @@ struct PokemonView: View {
                 
                 VStack {
                     HStack {
-                        Text(pokemonViewModel.pokemon?.description ?? "")
+                        Text(pokemon.description)
                     }
                     
                 }
@@ -85,22 +84,33 @@ struct PokemonView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         .padding(.top, 80)
-        .background(pokemonViewModel.pokemon?.types.first?.color())
+        .background(pokemon.types.first?.color())
         .edgesIgnoringSafeArea(.all)
-            .onAppear(){
-                pokemonViewModel.getPokemon(id: pokemonId)
-            }
-        
     }
 }
 
 
 struct PokemonView_Previews: PreviewProvider {
 
+
     
     
     static var previews: some View {
-        PokemonView(pokemonId: 1).previewLayout(.sizeThatFits)
+        
+        let bulbasaur = Pokemon(
+            id: 1,
+            name: "Bulbasaur",
+            types: [.grass, .poison],
+            description: "",
+            height: 0,
+            weight: 0,
+            sprites: PokemonSprites(
+                frontDefaultOfficialArtwork: "", frontShinyOfficialArtwork: "", frontMaleDreamWorld: "", frontFemaleDreamWorld: ""
+            )
+        )
+        
+        PokemonView(pokemon: bulbasaur)
+            .previewLayout(.sizeThatFits)
     }
 }
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PokemonItemView: View {
     
-    let pokemon : PokemonListItem
+    let pokemon : Pokemon
     
     var body: some View {
         VStack {
@@ -25,7 +25,7 @@ struct PokemonItemView: View {
                 
                 HStack {
                     Spacer()
-                    AsyncImage(url: URL(string:pokemon.image)) { image in
+                    AsyncImage(url: URL(string: pokemon.sprites.frontDefaultOfficialArtwork ?? "")) { image in
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fit)
@@ -83,21 +83,22 @@ struct PokemonItemView: View {
 struct PokemonItemView_Previews: PreviewProvider {
     static var previews: some View {
         
-        let bulbasaur = PokemonListItem(
+        let bulbasaur = Pokemon(
             id: 1,
             name: "Bulbasaur",
-            types: [.grass, .poison]
+            types: [.grass, .poison],
+            description: "",
+            height: 0,
+            weight: 0,
+            sprites: PokemonSprites(
+                frontDefaultOfficialArtwork: "", frontShinyOfficialArtwork: "", frontMaleDreamWorld: "", frontFemaleDreamWorld: ""
+            )
         )
-        
-        let ivysaur = PokemonListItem(
-            id: 2,
-            name: "Yvysaur",
-            types: [.grass, .poison]
-        )
+
         
         VStack {
             PokemonItemView(pokemon:bulbasaur).previewLayout(.sizeThatFits)
-            PokemonItemView(pokemon:ivysaur).previewLayout(.sizeThatFits)
+            //PokemonItemView(pokemon:ivysaur).previewLayout(.sizeThatFits)
         }.padding(.all, 18)
     }
 }

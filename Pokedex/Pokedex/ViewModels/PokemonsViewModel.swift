@@ -11,7 +11,7 @@ import PokemonAPI
 
 class PokemonsViewModel : ObservableObject {
     
-    @Published var pokemons : [PokemonListItem] = []
+    @Published var pokemons : [Pokemon] = []
     
     let apiService = APIService()
     let jsonService = JsonService()
@@ -19,12 +19,10 @@ class PokemonsViewModel : ObservableObject {
     
     func getPokemons(){
         
-        let pokemons : [PokemonJSONResponse]? = jsonService.readJsonFile(jsonPathFile: Constants.pokemonsJSONFilePath)
+        let pokemons : [Pokemon]? = jsonService.readJsonFile(jsonPathFile: Constants.pokemonsJSONFilePath)
         
         if pokemons != nil {
-            self.pokemons = pokemons!.map({ pokemonJSONResponse in
-                PokemonListItem(from: pokemonJSONResponse)
-            })
+            self.pokemons = pokemons!
         }
     }
     

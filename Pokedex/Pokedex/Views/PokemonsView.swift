@@ -37,7 +37,7 @@ struct PokemonsView: View {
                     
                     List(pokemonsViewModel.pokemons) { pokemon in
                         ZStack {
-                            NavigationLink(destination: PokemonView(pokemonId: pokemon.id)) {
+                            NavigationLink(destination: PokemonView(pokemon: pokemon)) {
                                 EmptyView()
                             }
                             
