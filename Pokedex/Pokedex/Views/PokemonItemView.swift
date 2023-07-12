@@ -50,11 +50,7 @@ struct PokemonItemView: View {
                         VStack {
                             ForEach(pokemon.types, id: \.self) { type in
                                 HStack {
-                                    Text(type.rawValue)
-                                        .foregroundColor(.white)
-                                        .padding(.all, 10)
-                                        .background(Color("TypeBackgroundColor"))
-                                        .cornerRadius(12)
+                                    PokemonTypeItemView(type: type)
                                     Spacer()
                                 }
                             }
@@ -91,7 +87,7 @@ struct PokemonItemView_Previews: PreviewProvider {
             height: 0,
             weight: 0,
             sprites: PokemonSprites(
-                frontDefaultOfficialArtwork: "", frontShinyOfficialArtwork: "", frontMaleDreamWorld: "", frontFemaleDreamWorld: ""
+                frontDefaultOfficialArtwork: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png", frontShinyOfficialArtwork: ""
             )
         )
 
