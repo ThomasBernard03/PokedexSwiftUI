@@ -94,7 +94,6 @@ struct PokemonItemView_Previews: PreviewProvider {
         
         VStack {
             PokemonItemView(pokemon:bulbasaur).previewLayout(.sizeThatFits)
-            //PokemonItemView(pokemon:ivysaur).previewLayout(.sizeThatFits)
         }.padding(.all, 18)
     }
 }

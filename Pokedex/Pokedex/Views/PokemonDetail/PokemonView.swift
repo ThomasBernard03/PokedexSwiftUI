@@ -98,10 +98,8 @@ struct PokemonView: View {
                         
                         if selectedTab == 0 {
                             VStack{
-                                Text("Contenu de l'onglet 1")
-                                HStack{
-                                    Spacer()
-                                }
+                                PokemonAboutView(description: pokemon.description, height: pokemon.height, weight: pokemon.weight)
+                                
                                 Spacer()
                             }
                             
