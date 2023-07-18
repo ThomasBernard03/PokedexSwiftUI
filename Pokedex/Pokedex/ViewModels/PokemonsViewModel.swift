@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import PokemonAPI
 
 
 class PokemonsViewModel : ObservableObject {

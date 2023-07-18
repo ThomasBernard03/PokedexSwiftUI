@@ -56,63 +56,32 @@ struct PokemonView: View {
                 
                 
                 VStack {
+                    Picker("", selection: $selectedTab) {
+                        Text("About").tag(0)
+                        Text("Stats").tag(1)
+                        Text("Evolution").tag(2)
+                        Text("Moves").tag(3)
+                        // Add more tabs as you wish
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .padding(.horizontal)
+                    
+                    // Tab content here...
                     VStack {
-                        HStack {
-                            Button(action: {
-                                selectedTab = 0
-                            }) {
-                                Image(systemName: "info.circle")
-                                    .foregroundColor(selectedTab == 0 ? Color.black : Color("LightGreyColor") )
-                                Text("About")
-                                    .foregroundColor(selectedTab == 0 ? Color.black : Color("LightGreyColor") )
-                            }
-                            
-                            Button(action: {
-                                selectedTab = 1
-                            }) {
-                                Image(systemName: "chart.bar.fill")
-                                    .foregroundColor(selectedTab == 1 ? Color.black : Color("LightGreyColor") )
-                                Text("Stats")
-                                    .foregroundColor(selectedTab == 1 ? Color.black : Color("LightGreyColor") )
-                            }
-                            
-                            Button(action: {
-                                selectedTab = 2
-                            }) {
-                                Image(systemName: "chevron.left.2")
-                                    .foregroundColor(selectedTab == 2 ? Color.black : Color("LightGreyColor"))
-                                    .rotationEffect(Angle(degrees: 90))
-                                Text("Stats")
-                                    .foregroundColor(selectedTab == 2 ? Color.black : Color("LightGreyColor") )
-                            }
-                            
-                            Button(action: {
-                                selectedTab = 3
-                            }) {
-                                Image(systemName: "hand.raised")
-                                    .foregroundColor(selectedTab == 3 ? Color.black : Color("LightGreyColor"))
-                                Text("Moves")
-                                    .foregroundColor(selectedTab == 3 ? Color.black : Color("LightGreyColor") )
-                            }
+                        switch selectedTab {
+                        case 0:
+                            PokemonAboutView(
+                                description: pokemon.description,
+                                height: pokemon.height,
+                                weight: pokemon.weight
+                            )
+                        case 1:
+                            Text("Tab 2 Content")
+                        default:
+                            Text("Default Content")
                         }
                         
-                        if selectedTab == 0 {
-                            VStack{
-                                PokemonAboutView(description: pokemon.description, height: pokemon.height, weight: pokemon.weight)
-                                
-                                Spacer()
-                            }
-                            
-                        } else {
-                            VStack{
-                                Text("Contenu de l'onglet 2")
-                                HStack{
-                                    Spacer()
-                                }
-                                Spacer()
-                            }
-                            
-                        }
+                        Spacer()
                     }
                     
                 }
