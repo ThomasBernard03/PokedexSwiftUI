@@ -13,6 +13,7 @@ struct PokemonsView: View {
     @State private var searchText = ""
     
     
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -34,19 +35,16 @@ struct PokemonsView: View {
                         )
                         .padding(.horizontal, 20)
                     
-                    
-                    List(pokemonsViewModel.pokemons) { pokemon in
-                        ZStack {
-                            NavigationLink(destination: PokemonView(pokemon: pokemon)) {
-                                EmptyView()
+                    ScrollView {
+                        LazyVStack {
+                            ForEach(pokemonsViewModel.pokemons) { pokemon in
+                                NavigationLink(destination: PokemonView(pokemon: pokemon)) {
+                                    PokemonItemView(pokemon: pokemon)
+                                }
                             }
-                            
-                            PokemonItemView(pokemon: pokemon)
-                            
-                        }.listRowSeparator(.hidden)
-                    }.listStyle(.plain)
-                    
-                    
+                        }
+                        .padding(.all, 20)
+                    }
                 }
                 .navigationTitle("Pokedex")
                 .navigationBarTitleDisplayMode(.automatic)
