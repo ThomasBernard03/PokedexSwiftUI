@@ -14,7 +14,7 @@ struct PokemonView: View {
     
     var body: some View {
         
-        ZStack {
+        ScrollView {
             
             VStack {
                 VStack {
@@ -73,7 +73,12 @@ struct PokemonView: View {
                             PokemonAboutView(
                                 description: pokemon.description,
                                 height: pokemon.height,
-                                weight: pokemon.weight
+                                weight: pokemon.weight,
+                                abilities: pokemon.abilities,
+                                growthRate: pokemon.growthRate,
+                                captureRate: pokemon.captureRate,
+                                baseHappiness: pokemon.baseHappiness
+                                
                             )
                         case 1:
                             PokemonStatView(stats: pokemon.stats)
@@ -116,7 +121,11 @@ struct PokemonView_Previews: PreviewProvider {
             sprites: PokemonSprites(
                 frontDefaultOfficialArtwork: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png", frontShinyOfficialArtwork: ""
             ),
-            stats: [PokemonStat]()
+            stats: [PokemonStat](),
+            abilities: [""],
+            growthRate: "",
+            captureRate: 0,
+            baseHappiness: 0
         )
         
         PokemonView(pokemon: bulbasaur)

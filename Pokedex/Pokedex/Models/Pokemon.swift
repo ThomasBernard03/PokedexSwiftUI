@@ -17,4 +17,24 @@ struct Pokemon : Decodable, Identifiable {
     let weight : Float
     let sprites : PokemonSprites
     let stats : [PokemonStat]
+    let abilities : [String]
+    let growthRate : String
+    let captureRate : Int
+    let baseHappiness : Int
+    
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case types
+        case description
+        case height
+        case weight
+        case sprites
+        case stats
+        case abilities
+        case growthRate = "growth_rate"
+        case captureRate = "capture_rate"
+        case baseHappiness = "base_happiness"
+    }
 }

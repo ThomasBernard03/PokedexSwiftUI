@@ -89,7 +89,11 @@ struct PokemonItemView_Previews: PreviewProvider {
             sprites: PokemonSprites(
                 frontDefaultOfficialArtwork: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png", frontShinyOfficialArtwork: ""
             ),
-            stats: [PokemonStat]()
+            stats: [PokemonStat](),
+            abilities: [],
+            growthRate: "medium",
+            captureRate : 28,
+            baseHappiness: 46
         )
 
         
