@@ -20,6 +20,7 @@ struct PokemonsView: View {
                 VStack {
                     
                     TextField("Search a pokemon", text: $searchText)
+                        .disableAutocorrection(true)
                         .padding(16)
                         .padding(.horizontal, 45)
                         .background(Color(.systemGray6))
@@ -35,13 +36,17 @@ struct PokemonsView: View {
                         )
                         .padding(.horizontal, 20)
                     
+                    
                     ScrollView {
                         LazyVStack {
-                            ForEach(pokemonsViewModel.pokemons) { pokemon in
+                            ForEach(pokemonsViewModel.pokemons.filter {
+                                searchText.isEmpty ? true : $0.name.lowercased().contains(searchText.lowercased())
+                            }) { pokemon in
                                 NavigationLink(destination: PokemonView(pokemon: pokemon)) {
                                     PokemonItemView(pokemon: pokemon)
                                 }
                             }
+
                         }
                         .padding(.all, 20)
                     }
