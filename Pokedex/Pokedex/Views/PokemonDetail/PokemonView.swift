@@ -26,7 +26,7 @@ struct PokemonView: View {
                     }
                     
                     HStack {
-                        Text("Bulbasaur")
+                        Text(pokemon.name)
                             .foregroundColor(.white)
                             .font(.title)
                             .fontWeight(.bold)

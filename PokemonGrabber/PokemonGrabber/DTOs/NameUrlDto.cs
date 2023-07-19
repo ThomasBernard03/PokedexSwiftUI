@@ -2,11 +2,11 @@ using Newtonsoft.Json;
 
 namespace PokemonGrabber.DTOs;
 
-public class PokemonListDto
+public class NameUrlDto
 {
     [JsonProperty("name")]
-    public string name { get; set; }
+    public string Name { get; set; }
 
     [JsonProperty("url")]
-    public string url { get; set; }
+    public string Url { get; set; }
 }

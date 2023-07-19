@@ -22,8 +22,21 @@ public class PokemonDetailDto
     [JsonProperty("sprites")]
     public PokemonDetailSpriteDto Sprites { get; set; }
     
+    [JsonProperty("stats")]
+    public IEnumerable<PokemonDetailStatDto> Stats { get; set; }
+    
     [JsonProperty("species")]
     public LinkDto Species { get; set; }
+}
+
+
+public class PokemonDetailStatDto
+{
+    [JsonProperty("base_stat")]
+    public int BaseStat { get; set; }
+    
+    [JsonProperty("stat")]
+    public NameUrlDto Stat { get; set; }
 }
 
 

@@ -16,6 +16,7 @@ struct PokemonAboutView: View {
     var body: some View {
         VStack {
             Text(description)
+                .multilineTextAlignment(.center)
             
             HStack {
                 
@@ -51,12 +52,25 @@ struct PokemonAboutView: View {
                 
                 Spacer()
             }
-            .background(.white)
             .padding(.all, 20)
-            .shadow(color: .black, radius: 5, x: 0, y: 5)
+            .background(.white)
+            .cornerRadius(20)
+            .shadow(color: .gray, radius: 2, x: 0, y: 3)
+            .padding(.all, 20)
+            
+            
+            HStack {
+                Text("And what more ?")
+                    .font(.system(size: 20))
+                    .fontWeight(.bold)
+                Spacer()
+            }
+            
+            
+            
         }
-        
-        
+        .padding(.all, 10)
+        .padding(.bottom, 0)
     }
 }
 

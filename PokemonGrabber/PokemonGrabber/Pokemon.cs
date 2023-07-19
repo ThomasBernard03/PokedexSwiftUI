@@ -24,6 +24,18 @@ public class Pokemon
     
     [JsonProperty("sprites")]
     public PokemonSprite Sprites { get; set; }
+    
+    [JsonProperty("stats")]
+    public IEnumerable<PokemonStat> Stats { get; set; }
+}
+
+public class PokemonStat
+{
+    [JsonProperty("name")]
+    public string Name { get; set; }
+    
+    [JsonProperty("value")]
+    public int Value { get; set; }
 }
 
 public class PokemonSprite
