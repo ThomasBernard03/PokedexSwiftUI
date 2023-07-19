@@ -76,7 +76,7 @@ struct PokemonView: View {
                                 weight: pokemon.weight
                             )
                         case 1:
-                            Text("Tab 2 Content")
+                            PokemonStatView(stats: pokemon.stats)
                         default:
                             Text("Default Content")
                         }
@@ -115,7 +115,8 @@ struct PokemonView_Previews: PreviewProvider {
             weight: 0,
             sprites: PokemonSprites(
                 frontDefaultOfficialArtwork: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png", frontShinyOfficialArtwork: ""
-            )
+            ),
+            stats: [PokemonStat]()
         )
         
         PokemonView(pokemon: bulbasaur)

@@ -16,4 +16,5 @@ struct Pokemon : Decodable, Identifiable {
     let height : Int
     let weight : Float
     let sprites : PokemonSprites
+    let stats : [PokemonStat]
 }
