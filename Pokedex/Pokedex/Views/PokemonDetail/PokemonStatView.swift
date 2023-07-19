@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
-
 struct PokemonStatView: View {
     
     let stats : [PokemonStat]
+    @State private var progress = 0.0
     
     var body: some View {
         
@@ -25,10 +25,17 @@ struct PokemonStatView: View {
                     }
                     
                     HStack {
-                        ProgressView(value: Float(stat.value), total: 100)
+                        ProgressView(value: Float(progress) * Float(stat.value), total: 200)
                             .tint(Color("FireColor"))
                             .progressViewStyle(LinearProgressViewStyle())
                     }
+                }
+            }
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                withAnimation(.easeInOut(duration: 2)) {
+                    progress = 1.0
                 }
             }
         }
