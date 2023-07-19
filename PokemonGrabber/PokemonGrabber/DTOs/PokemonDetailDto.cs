@@ -27,6 +27,15 @@ public class PokemonDetailDto
     
     [JsonProperty("species")]
     public LinkDto Species { get; set; }
+    
+    [JsonProperty("abilities")]
+    public IEnumerable<PokemonDetailAbilitiesDto> Abilities { get; set; }
+}
+
+public class PokemonDetailAbilitiesDto
+{
+    [JsonProperty("ability")]
+    public NameUrlDto Ability { get; set; }
 }
 
 

@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 using PokemonGrabber;
 using PokemonGrabber.DTOs;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Starting...");
 
 var httpClient = new HttpClient();
 var pokemonsString = await httpClient.GetStringAsync("https://pokeapi.co/api/v2/pokemon?limit=1000");
@@ -35,20 +35,20 @@ foreach (var pokemonResults in serializedResponse.results)
         {
             FrontDefaultOfficialArtwork = pokemonDetail.Sprites.Other.OfficialArtwork.FrontDefault,
             FrontShinyOfficialArtwork = pokemonDetail.Sprites.Other.OfficialArtwork.FrontShiny,
-            FrontFemaleDreamWorld = pokemonDetail.Sprites.Other.DreamWorld.FrontFemale,
-            FrontMaleDreamWorld = pokemonDetail.Sprites.Other.DreamWorld.FrontDefault,
+            //FrontFemaleDreamWorld = pokemonDetail.Sprites.Other.DreamWorld.FrontFemale,
+            //FrontMaleDreamWorld = pokemonDetail.Sprites.Other.DreamWorld.FrontDefault,
         },
         Stats = pokemonDetail.Stats.Select(x => new PokemonStat()
         {
             Name = x.Stat.Name,
             Value = x.BaseStat
-        })
+        }),
+        Abilities = pokemonDetail.Abilities.Select(x => x.Ability.Name)
     };
     
     pokemons.Add(pokemon);
 }
-        
-// Écrivez la réponse dans un fichier JSON
+
 await File.WriteAllTextAsync("pokemon.json", JsonConvert.SerializeObject(pokemons));
         
 Console.WriteLine("Les données de l'API Pokémon ont été enregistrées dans pokemon.json");

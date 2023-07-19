@@ -27,6 +27,9 @@ public class Pokemon
     
     [JsonProperty("stats")]
     public IEnumerable<PokemonStat> Stats { get; set; }
+    
+    [JsonProperty("abilities")]
+    public IEnumerable<string> Abilities { get; set; }
 }
 
 public class PokemonStat
@@ -46,9 +49,9 @@ public class PokemonSprite
     [JsonProperty("front_shiny_official_artwork")]
     public string FrontShinyOfficialArtwork { get; set; }
     
-    [JsonProperty("front_male_dream_world")]
-    public string FrontMaleDreamWorld { get; set; }
-    
-    [JsonProperty("front_female_dream_world")]
-    public string FrontFemaleDreamWorld { get; set; }
+    //[JsonProperty("front_male_dream_world")]
+    //public string FrontMaleDreamWorld { get; set; }
+    //
+    //[JsonProperty("front_female_dream_world")]
+    //public string FrontFemaleDreamWorld { get; set; }
 }
