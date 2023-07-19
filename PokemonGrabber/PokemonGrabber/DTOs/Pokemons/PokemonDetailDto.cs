@@ -35,7 +35,7 @@ public class PokemonDetailDto
 public class PokemonDetailAbilitiesDto
 {
     [JsonProperty("ability")]
-    public NameUrlDto Ability { get; set; }
+    public LinkDto Ability { get; set; }
 }
 
 
@@ -45,7 +45,7 @@ public class PokemonDetailStatDto
     public int BaseStat { get; set; }
     
     [JsonProperty("stat")]
-    public NameUrlDto Stat { get; set; }
+    public LinkDto Stat { get; set; }
 }
 
 

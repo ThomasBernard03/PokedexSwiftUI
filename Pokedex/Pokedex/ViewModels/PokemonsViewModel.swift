@@ -25,4 +25,16 @@ class PokemonsViewModel : ObservableObject {
         }
     }
     
+    
+    func getPokemon(id : Int) -> Pokemon? {
+        if pokemons.isEmpty {
+            getPokemons()
+        }
+        
+        
+        return pokemons.first { pokemon in
+            pokemon.id == id
+        }
+    }
+    
 }

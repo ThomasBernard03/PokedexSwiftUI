@@ -84,6 +84,8 @@ struct PokemonView: View {
                                 )
                             case 1:
                                 PokemonStatView(stats: pokemon.stats)
+                            case 2 :
+                                PokemonEvolutionView()
                             default:
                                 Text("Default Content")
                             }
