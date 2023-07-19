@@ -19,6 +19,15 @@ public class Pokemon
     [JsonProperty("description")]
     public string Description { get; set; }
     
+    [JsonProperty("growth_rate")]
+    public string GrowthRate { get; set; }
+    
+    [JsonProperty("base_happiness")]
+    public int BaseHappiness { get; set; } 
+    
+    [JsonProperty("capture_rate")]
+    public int CaptureRate { get; set; }
+    
     [JsonProperty("types")]
     public List<string> Types { get; set; }
     

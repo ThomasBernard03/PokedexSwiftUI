@@ -7,7 +7,7 @@ using PokemonGrabber.DTOs;
 Console.WriteLine("Starting...");
 
 var httpClient = new HttpClient();
-var pokemonsString = await httpClient.GetStringAsync("https://pokeapi.co/api/v2/pokemon?limit=1000");
+var pokemonsString = await httpClient.GetStringAsync("https://pokeapi.co/api/v2/pokemon?limit=151");
         
 // Utilisez JsonConvert pour sérialiser la réponse
 var serializedResponse = JsonConvert.DeserializeObject<RootDto<NameUrlDto>>(pokemonsString);
@@ -31,6 +31,9 @@ foreach (var pokemonResults in serializedResponse.results)
         Height = pokemonDetail.Height * 10,
         Description = pokemonSpecies.flavorTextEntries.FirstOrDefault(x => x.Language.Name == "en").FlavorText.Replace("\n", " ").Replace("\f", " "),
         Types = pokemonDetail.Types.Select(x => x.Type.Name).ToList(),
+        GrowthRate = pokemonSpecies.GrowthRate.Name,
+        CaptureRate = pokemonSpecies.CaptureRate,
+        BaseHappiness = pokemonSpecies.BaseHappiness,
         Sprites = new PokemonSprite()
         {
             FrontDefaultOfficialArtwork = pokemonDetail.Sprites.Other.OfficialArtwork.FrontDefault,

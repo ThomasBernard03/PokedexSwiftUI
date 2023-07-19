@@ -32,6 +32,7 @@ struct PokemonStatView: View {
                 }
             }
         }
+        .padding(.all, 10)
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now()) {
                 withAnimation(.easeInOut(duration: 2)) {
