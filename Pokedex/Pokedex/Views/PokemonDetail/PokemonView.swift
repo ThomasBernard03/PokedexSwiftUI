@@ -14,95 +14,91 @@ struct PokemonView: View {
     
     var body: some View {
         
-        ScrollView {
-            
-            VStack {
-                VStack {
-                    HStack {
-                        Text("#\(String(format: "%03d", pokemon.id))")
-                            .foregroundColor(.white)
-                            .fontWeight(.bold)
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        Text(pokemon.name)
-                            .foregroundColor(.white)
-                            .font(.title)
-                            .fontWeight(.bold)
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        ForEach(pokemon.types, id: \.self) { type in
-                            PokemonTypeItemView(type: type)
-                        }
-                        
-                        Spacer()
-                    }
-
-                    AsyncImage(url: URL(string:pokemon.sprites.frontDefaultOfficialArtwork ?? "")) { image in
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 200, height: 200)
-                    } placeholder: {
-                        Image("Pokeball")
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 200, height: 200)
-                    }
-                }
-                .padding(.all, 20)
-                
+        ZStack {
+            pokemon.types.first?.color().ignoresSafeArea(.all)
+            ScrollView {
                 
                 VStack {
-                    Picker("", selection: $selectedTab) {
-                        Text("About").tag(0)
-                        Text("Stats").tag(1)
-                        Text("Evolution").tag(2)
-                        Text("Moves").tag(3)
-                        // Add more tabs as you wish
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
-                    .padding(.horizontal)
-                    
-                    // Tab content here...
                     VStack {
-                        switch selectedTab {
-                        case 0:
-                            PokemonAboutView(
-                                description: pokemon.description,
-                                height: pokemon.height,
-                                weight: pokemon.weight,
-                                abilities: pokemon.abilities,
-                                growthRate: pokemon.growthRate,
-                                captureRate: pokemon.captureRate,
-                                baseHappiness: pokemon.baseHappiness
-                                
-                            )
-                        case 1:
-                            PokemonStatView(stats: pokemon.stats)
-                        default:
-                            Text("Default Content")
+                        HStack {
+                            Text("#\(String(format: "%03d", pokemon.id))")
+                                .foregroundColor(.white)
+                                .fontWeight(.bold)
+                            Spacer()
                         }
                         
-                        Spacer()
-                    }
-                    
-                }
-                .frame(maxWidth: .infinity, maxHeight : .infinity)
-                .padding(.all, 20)
-                .background()
-                .cornerRadius(20)
-            }
-            .frame(maxWidth: .infinity, alignment: .topLeading)
+                        HStack {
+                            Text(pokemon.name)
+                                .foregroundColor(.white)
+                                .font(.title)
+                                .fontWeight(.bold)
+                            Spacer()
+                        }
+                        
+                        HStack {
+                            ForEach(pokemon.types, id: \.self) { type in
+                                PokemonTypeItemView(type: type)
+                            }
+                            
+                            Spacer()
+                        }
 
-            
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-        .padding(.top, 80)
-        .background(pokemon.types.first?.color())
-        .edgesIgnoringSafeArea(.all)
+                        AsyncImage(url: URL(string:pokemon.sprites.frontDefaultOfficialArtwork ?? "")) { image in
+                            image
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 200, height: 200)
+                        } placeholder: {
+                            Image("Pokeball")
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 200, height: 200)
+                        }
+                    }
+                    .padding(.all, 20)
+                    
+                    
+                    VStack {
+                        Picker("", selection: $selectedTab) {
+                            Text("About").tag(0)
+                            Text("Stats").tag(1)
+                            Text("Evolution").tag(2)
+                            Text("Moves").tag(3)
+                            // Add more tabs as you wish
+                        }
+                        .pickerStyle(SegmentedPickerStyle())
+                        .padding(.horizontal)
+                        
+                        // Tab content here...
+                        VStack {
+                            switch selectedTab {
+                            case 0:
+                                PokemonAboutView(
+                                    description: pokemon.description,
+                                    height: pokemon.height,
+                                    weight: pokemon.weight,
+                                    abilities: pokemon.abilities,
+                                    growthRate: pokemon.growthRate,
+                                    captureRate: pokemon.captureRate,
+                                    baseHappiness: pokemon.baseHappiness
+                                    
+                                )
+                            case 1:
+                                PokemonStatView(stats: pokemon.stats)
+                            default:
+                                Text("Default Content")
+                            }
+                            
+                            Spacer()
+                        }
+                        
+                    }
+                    .frame(maxWidth: .infinity, maxHeight : .infinity)
+                    .padding(.all, 20)
+                    .background()
+                    .cornerRadius(20)
+                }
+            }
+        }.navigationBarTitleDisplayMode(.inline)
     }
 }
 
