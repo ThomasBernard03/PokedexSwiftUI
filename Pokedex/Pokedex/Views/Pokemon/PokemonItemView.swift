@@ -12,67 +12,68 @@ struct PokemonItemView: View {
     let pokemon : Pokemon
     
     var body: some View {
-        VStack {
+        ZStack {
+            pokemon.types.first?.color()
             
-            HStack {
-                Spacer()
-                Text("#\(String(format: "%03d", pokemon.id))")
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-            }
+            Constants.Images.pokeballBackground
+                .resizable()
+                .frame(width: 200, height: 200)
+                .offset(x:140, y:60)
             
-            ZStack {
-                
+            Constants.Images.pokeballBackground
+                .resizable()
+                .frame(width: 200, height: 200)
+                .offset(x:-200, y:-100)
+            
+            AsyncImage(url: URL(string: pokemon.sprites.frontDefaultOfficialArtwork ?? "")) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 150, height: 150)
+            } placeholder: { ProgressView()}
+                .offset(x:100, y:30)
+            
+            VStack {
                 HStack {
                     Spacer()
-                    AsyncImage(url: URL(string: pokemon.sprites.frontDefaultOfficialArtwork ?? "")) { image in
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 120, height: 120)
-                    } placeholder: {
-                        Image("Pokeball")
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 120, height: 120)
-                    }
+                    Text("#\(String(format: "%03d", pokemon.id))")
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .font(.title3)
+                        .padding(.top, 20)
                 }
-
                 
-                VStack {
-                    HStack {
-                        Text(pokemon.name)
-                            .foregroundColor(.white)
-                            .fontWeight(.bold)
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        VStack {
-                            ForEach(pokemon.types, id: \.self) { type in
-                                HStack {
-                                    PokemonTypeItemView(type: type)
-                                    Spacer()
-                                }
+                HStack {
+                    Text(pokemon.name)
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                        .font(.title)
+                    Spacer()
+                }
+                
+                HStack {
+                    VStack {
+                        ForEach(pokemon.types, id: \.self) { type in
+                            HStack {
+                                PokemonTypeItemView(type: type)
+                                Spacer()
                             }
                         }
-  
-                        
-                        Spacer()
                     }
 
                     
                     Spacer()
                 }
+                
+                Spacer()
             }
-
+            .padding(.horizontal, 30)
             
-
             
         }
-        .padding(.all, 12)
-        .frame(height: 180)
-        .background(pokemon.types.first?.color() ?? Color("GreyColor"))
-        .cornerRadius(26)
+        .cornerRadius(40)
+        .frame(height: 200)
+
     }
 }
 
