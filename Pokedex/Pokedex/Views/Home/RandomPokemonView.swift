@@ -26,6 +26,23 @@ struct RandomPokemonView: View {
                             .foregroundColor(.white)
                         Spacer()
                     }
+                    
+                    HStack {
+                        Text("#\(String(format: "%03d", pokemon.id))")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                        Spacer()
+                    }
+                    
+                    HStack {
+                        Text(pokemon.name)
+                            .foregroundColor(.white)
+                            .fontWeight(.bold)
+                        Spacer()
+                    }
+
+                    
+                    
                     Spacer()
                 }
                 .padding(.all, 20)
@@ -86,6 +103,6 @@ struct RandomPokemonView_Previews: PreviewProvider {
         )
         
         
-        RandomPokemonView(pokemon: bulbasaur)
+        RandomPokemonView(pokemon: bulbasaur).previewLayout(.sizeThatFits)
     }
 }
