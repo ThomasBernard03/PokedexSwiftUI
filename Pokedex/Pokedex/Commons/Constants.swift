@@ -21,6 +21,9 @@ struct Constants {
         static let fireColor = Color("FireColor")
         static let waterColor = Color("WaterColor")
         static let electricColor = Color("ElectricColor")
+        static let normalColor = Color("NormalColor")
+        
+        static let greyColor = Color("GreyColor")
     }
     
     struct Images {
