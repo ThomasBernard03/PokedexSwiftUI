@@ -7,6 +7,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    let homeViewModel = HomeViewModel()
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -21,8 +24,9 @@ struct HomeView: View {
                     HomeItemView(title: "Items", color: Constants.Colors.electricColor)
                 }
                 
+                RandomPokemonView(pokemon: homeViewModel.getRandomPokemon())
                 
-                Spacer()
+                
             }
             .padding(20)
             .navigationTitle("Welcome")

@@ -37,7 +37,7 @@ struct HomeItemView: View {
         }
         .padding(.horizontal, 30)
         .background(color)
-        .frame(width: .infinity, height: 80)
+        .frame(height: 80)
         .cornerRadius(20)
     }
 }

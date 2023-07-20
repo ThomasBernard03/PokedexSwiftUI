@@ -46,8 +46,15 @@ struct ItemItemView: View {
                     }
                     
                     HStack {
-                        Text("\(item.cost)₽")
-                            .fontWeight(.bold)
+                        if item.cost == 0 {
+                            Text("Not for sell")
+                                .fontWeight(.bold)
+                        }
+                        else {
+                            Text("\(item.cost)₽")
+                                .fontWeight(.bold)
+                        }
+
                         Spacer()
                     }
                     
