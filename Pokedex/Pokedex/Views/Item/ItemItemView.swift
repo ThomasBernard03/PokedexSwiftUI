@@ -46,7 +46,7 @@ struct ItemItemView: View {
                     }
                     
                     HStack {
-                        Text("\(item.cost)$")
+                        Text("\(item.cost)₽")
                             .fontWeight(.bold)
                         Spacer()
                     }
