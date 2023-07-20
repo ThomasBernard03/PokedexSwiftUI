@@ -15,7 +15,9 @@ struct PokemonView: View {
     var body: some View {
         
         ZStack {
-            pokemon.types.first?.color().ignoresSafeArea(.all)
+            pokemon.types.first?.color()
+                .ignoresSafeArea(.all)
+            
             ScrollView {
                 
                 VStack {
