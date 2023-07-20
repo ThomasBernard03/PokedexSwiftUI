@@ -37,8 +37,9 @@ async Task GetAndSaveItemsAsync()
             Category = itemDetail.Category.Name,
             Cost = itemDetail.Cost
         };
-        
-        items.Add(item);
+
+        if (!string.IsNullOrEmpty(item.Sprite))
+            items.Add(item);
     }
     
     await File.WriteAllTextAsync("items.json", JsonConvert.SerializeObject(items));
