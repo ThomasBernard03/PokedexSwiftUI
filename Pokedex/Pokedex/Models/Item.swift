@@ -8,12 +8,12 @@
 import Foundation
 
 
-struct Item {
+struct Item : Decodable, Identifiable {
     let id : Int
     let name : String
     let category : String
     let cost : Int
-    let sprite : String
+    let sprite : String?
     let description : String
 }
 

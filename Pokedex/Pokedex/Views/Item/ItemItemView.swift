@@ -25,7 +25,7 @@ struct ItemItemView: View {
             }
             HStack {
                 
-                AsyncImage(url: URL(string: item.sprite)) { image in
+                AsyncImage(url: URL(string: item.sprite ?? "")) { image in
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -63,7 +63,7 @@ struct ItemItemView: View {
             }
         }
         
-        .padding(20)
+        .padding(10)
         
         .background(
             Color.white
@@ -79,8 +79,17 @@ struct ItemItemView: View {
 struct ItemItemView_Previews: PreviewProvider {
     static var previews: some View {
         
-        let item = Item(id: 4, name: "poke-ball", category: "standard-balls", cost: 200, sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png", description: "A tool used for catching wild POKéMON.")
+        let item1 = Item(id: 4, name: "poke-ball", category: "standard-balls", cost: 200, sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png", description: "A tool used for catching wild POKéMON.")
         
-        ItemItemView(item:item)
+        let item2 = Item(id: 24, name: "max-potion", category: "healing", cost: 2500, sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/max-potion.png", description: "Fully restores the HP of a POKéMON.")
+        
+        VStack(spacing:10) {
+            ItemItemView(item:item1)
+            ItemItemView(item:item2)
+        }
+        
+
+        
+        
     }
 }
