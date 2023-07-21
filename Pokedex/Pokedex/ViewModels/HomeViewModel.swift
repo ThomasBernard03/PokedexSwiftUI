@@ -9,13 +9,11 @@ import Foundation
 
 class HomeViewModel {
     
-    let jsonService = JsonService()
-    
+    private let pokemonService = PokemonService()
     
     func getRandomPokemon() -> Pokemon {
-        let pokemons : [Pokemon]? = jsonService.readJsonFile(jsonPathFile: Constants.pokemonsJSONFilePath)
+        let pokemons : [Pokemon] = pokemonService.getPokemons()
         
-        
-        return pokemons!.randomElement()!
+        return pokemons.randomElement()!
     }
 }

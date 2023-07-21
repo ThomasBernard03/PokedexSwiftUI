@@ -12,29 +12,14 @@ class PokemonsViewModel : ObservableObject {
     
     @Published var pokemons : [Pokemon] = []
     
-    let apiService = APIService()
-    let jsonService = JsonService()
+    
+    private let pokemonService = PokemonService()
     
     
     func getPokemons(){
         
-        let pokemons : [Pokemon]? = jsonService.readJsonFile(jsonPathFile: Constants.pokemonsJSONFilePath)
+        let pokemons : [Pokemon] = pokemonService.getPokemons()
         
-        if pokemons != nil {
-            self.pokemons = pokemons!
-        }
-    }
-    
-    
-    func getPokemon(id : Int) -> Pokemon? {
-        if pokemons.isEmpty {
-            getPokemons()
-        }
-        
-        
-        return pokemons.first { pokemon in
-            pokemon.id == id
-        }
-    }
-    
+        self.pokemons = pokemons
+    }    
 }

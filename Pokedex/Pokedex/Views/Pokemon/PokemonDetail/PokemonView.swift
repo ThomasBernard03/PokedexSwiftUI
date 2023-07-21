@@ -45,6 +45,10 @@ struct PokemonView: View {
                     
                     
                     Spacer()
+                    
+                    Text(pokemon.shape)
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
                 }
                 
                 HStack {
@@ -108,7 +112,7 @@ struct PokemonView: View {
                     case 1:
                         PokemonStatView(stats: pokemon.stats)
                     case 2 :
-                        PokemonEvolutionView()
+                        PokemonEvolutionView(evolutionChain: pokemon.evolutionChain)
                     default:
                         Text("Default Content")
                     }

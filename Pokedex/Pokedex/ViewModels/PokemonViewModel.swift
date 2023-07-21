@@ -27,4 +27,8 @@ class PokemonViewModel {
         player.play()
     }
     
+    func getPokemon(id : Int){
+        
+    }
+    
 }

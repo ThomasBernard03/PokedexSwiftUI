@@ -10,17 +10,12 @@ import Foundation
 
 
 class ItemsViewModel {
-    let jsonService = JsonService()
+    
+    private let itemService = ItemService()
 
 
-    func getItems() -> [Item]{
-        
-        let items : [Item]? = jsonService.readJsonFile(jsonPathFile: Constants.itemsJSONFilePath)
-        
-        if items != nil {
-            return items!
-        }
-        
-        return []
+    func getItems() -> [Item] {
+    
+        return itemService.getItems()
     }
 }
