@@ -9,99 +9,121 @@ import SwiftUI
 
 struct PokemonView: View {
     
+    private let pokemonViewModel = PokemonViewModel()
+    
     let pokemon : Pokemon
     @State private var selectedTab = 0
     
     var body: some View {
         
-        ZStack {
+        ZStack(alignment: .top) {
             pokemon.types.first?.color()
                 .ignoresSafeArea(.all)
             
-            ScrollView {
-                
-                VStack {
-                    VStack {
-                        HStack {
-                            Text("#\(String(format: "%03d", pokemon.id))")
-                                .foregroundColor(.white)
-                                .fontWeight(.bold)
-                            Spacer()
-                        }
-                        
-                        HStack {
-                            Text(pokemon.name)
-                                .foregroundColor(.white)
-                                .font(.title)
-                                .fontWeight(.bold)
-                            Spacer()
-                        }
-                        
-                        HStack {
-                            ForEach(pokemon.types, id: \.self) { type in
-                                PokemonTypeItemView(type: type)
-                            }
-                            
-                            Spacer()
-                        }
-
-                        AsyncImage(url: URL(string:pokemon.sprites.frontDefaultOfficialArtwork ?? "")) { image in
-                            image
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 200, height: 200)
-                        } placeholder: {
-                            Image("Pokeball")
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 200, height: 200)
-                        }
-                    }
-                    .padding(.all, 20)
-                    
-                    
-                    VStack {
-                        Picker("", selection: $selectedTab) {
-                            Text("About").tag(0)
-                            Text("Stats").tag(1)
-                            Text("Evolution").tag(2)
-                            Text("Moves").tag(3)
-                            // Add more tabs as you wish
-                        }
-                        .pickerStyle(SegmentedPickerStyle())
-                        .padding(.horizontal)
-                        
-                        // Tab content here...
-                        VStack {
-                            switch selectedTab {
-                            case 0:
-                                PokemonAboutView(
-                                    description: pokemon.description,
-                                    height: pokemon.height,
-                                    weight: pokemon.weight,
-                                    abilities: pokemon.abilities,
-                                    growthRate: pokemon.growthRate,
-                                    captureRate: pokemon.captureRate,
-                                    baseHappiness: pokemon.baseHappiness
-                                    
-                                )
-                            case 1:
-                                PokemonStatView(stats: pokemon.stats)
-                            case 2 :
-                                PokemonEvolutionView()
-                            default:
-                                Text("Default Content")
-                            }
-                            
-                            Spacer()
-                        }
-                        
-                    }
-                    .frame(maxWidth: .infinity, maxHeight : .infinity)
-                    .padding(.all, 20)
-                    .background()
-                    .cornerRadius(20)
+            VStack {
+                HStack {
+                    Text("#\(String(format: "%03d", pokemon.id))")
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                    Spacer()
                 }
+                
+                
+                HStack(spacing:15) {
+                    Text(pokemon.name)
+                        .foregroundColor(.white)
+                        .font(.title)
+                        .fontWeight(.bold)
+                    
+                    
+                    Button
+                    
+                    Image(systemName: "speaker.wave.3")
+                        .foregroundColor(.white)
+                        .font(.title3)
+                        .onTapGesture {
+                            pokemonViewModel.playPokemonSound(id: pokemon.id)
+                        }
+                    
+                    
+                    Spacer()
+                }
+                
+                HStack {
+                    ForEach(pokemon.types, id: \.self) { type in
+                        PokemonTypeItemView(type: type)
+                    }
+                    
+                    Spacer()
+                }
+            }.padding(20)
+            
+            ZStack {
+                
+                Constants.Images.pokeballBackground
+                    .resizable()
+                    .frame(width: 180, height: 180)
+                    .offset(x: 0, y: 20)
+                
+                
+                AsyncImage(url: URL(string:pokemon.sprites.frontDefaultOfficialArtwork ?? "")) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 200, height: 200)
+                } placeholder: { ProgressView()}
+                
+                
+                    
             }
+            .offset(x:0, y: 120)
+            .zIndex(2)
+            
+            
+
+            
+            VStack {
+                
+                Picker("", selection: $selectedTab) {
+                    Text("About").tag(0)
+                    Text("Stats").tag(1)
+                    Text("Evolution").tag(2)
+                    Text("Moves").tag(3)
+                    // Add more tabs as you wish
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                
+                
+                ScrollView {
+                    switch selectedTab {
+                    case 0:
+                        PokemonAboutView(
+                            description: pokemon.description,
+                            height: pokemon.height,
+                            weight: pokemon.weight,
+                            abilities: pokemon.abilities,
+                            growthRate: pokemon.growthRate,
+                            captureRate: pokemon.captureRate,
+                            baseHappiness: pokemon.baseHappiness
+                            
+                        )
+                    case 1:
+                        PokemonStatView(stats: pokemon.stats)
+                    case 2 :
+                        PokemonEvolutionView()
+                    default:
+                        Text("Default Content")
+                    }
+                }
+                
+            }
+            .padding(.top, 40)
+            .padding(.horizontal)
+            .background(.white)
+            .cornerRadius(30)
+            .offset(y:280)
+            
+
         }.navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -122,10 +144,10 @@ struct PokemonView_Previews: PreviewProvider {
                 frontDefaultOfficialArtwork: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png", frontShinyOfficialArtwork: ""
             ),
             stats: [PokemonStat](),
-            abilities: [""],
-            growthRate: "",
-            captureRate: 0,
-            baseHappiness: 0
+            abilities: ["overgrow"],
+            growthRate: "medium-slow",
+            captureRate: 45,
+            baseHappiness: 50
         )
         
         PokemonView(pokemon: bulbasaur)
