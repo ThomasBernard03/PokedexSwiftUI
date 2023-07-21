@@ -99,7 +99,9 @@ struct RandomPokemonView_Previews: PreviewProvider {
             abilities: [],
             growthRate: "medium",
             captureRate : 28,
-            baseHappiness: 46
+            baseHappiness: 46,
+            shape: "quadriped",
+            evolutionChain: PokemonEvolutionChain(pokemonId: 1, level: nil, item: nil, evolutionChain: nil)
         )
         
         

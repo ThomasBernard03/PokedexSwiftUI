@@ -145,7 +145,9 @@ struct PokemonView_Previews: PreviewProvider {
             abilities: ["overgrow"],
             growthRate: "medium-slow",
             captureRate: 45,
-            baseHappiness: 50
+            baseHappiness: 50,
+            shape: "quadriped",
+            evolutionChain: PokemonEvolutionChain(pokemonId: 1, level: nil, item: nil, evolutionChain: nil)
         )
         
         PokemonView(pokemon: bulbasaur)

@@ -21,6 +21,8 @@ struct Pokemon : Decodable, Identifiable {
     let growthRate : String
     let captureRate : Int
     let baseHappiness : Int
+    let shape : String
+    let evolutionChain : PokemonEvolutionChain
     
     
     enum CodingKeys: String, CodingKey {
@@ -33,8 +35,10 @@ struct Pokemon : Decodable, Identifiable {
         case sprites
         case stats
         case abilities
+        case shape
         case growthRate = "growth_rate"
         case captureRate = "capture_rate"
         case baseHappiness = "base_happiness"
+        case evolutionChain = "evolution_chain"
     }
 }
