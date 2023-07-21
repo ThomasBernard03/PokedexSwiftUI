@@ -6,8 +6,8 @@ using PokemonGrabber.DTOs;
 using PokemonGrabber.DTOs.Items;
 
 
-//await GetAndSavePokemonsAsync();
-await GetAndSaveItemsAsync();
+await GetAndSavePokemonsAsync();
+//await GetAndSaveItemsAsync();
 
 
 async Task GetAndSaveItemsAsync()
@@ -68,7 +68,10 @@ async Task GetAndSavePokemonsAsync()
         
         var pokemonSpeciesString = await httpClient.GetStringAsync(pokemonDetail.Species.Url);
         var pokemonSpecies = JsonConvert.DeserializeObject<PokemonDetailSpeciesDto>(pokemonSpeciesString);
-    
+        
+        var pokemonEvolutionChainString = await httpClient.GetStringAsync(pokemonSpecies.EvolutionChain.Url);
+        var pokemonEvolutionChain = JsonConvert.DeserializeObject<PokemonEvolutionChainDto>(pokemonEvolutionChainString);
+        
         var pokemon = new Pokemon()
         {
             Id = pokemonDetail.Id,
@@ -80,6 +83,7 @@ async Task GetAndSavePokemonsAsync()
             GrowthRate = pokemonSpecies.GrowthRate.Name,
             CaptureRate = pokemonSpecies.CaptureRate,
             BaseHappiness = pokemonSpecies.BaseHappiness,
+            Shape = pokemonSpecies.Shape.Name,
             Sprites = new PokemonSprite()
             {
                 FrontDefaultOfficialArtwork = pokemonDetail.Sprites.Other.OfficialArtwork.FrontDefault,
@@ -92,7 +96,8 @@ async Task GetAndSavePokemonsAsync()
                 Name = x.Stat.Name,
                 Value = x.BaseStat
             }),
-            Abilities = pokemonDetail.Abilities.Select(x => x.Ability.Name)
+            Abilities = pokemonDetail.Abilities.Select(x => x.Ability.Name),
+            EvolutionChain = ParseEvolutionChain(pokemonEvolutionChain.ChainDto)
         };
         
         pokemons.Add(pokemon);
@@ -101,4 +106,21 @@ async Task GetAndSavePokemonsAsync()
     await File.WriteAllTextAsync("pokemon.json", JsonConvert.SerializeObject(pokemons));
             
     Console.WriteLine("Les données de l'API Pokémon ont été enregistrées dans pokemon.json");
+}
+
+
+PokemonEvolutionChain ParseEvolutionChain(ChainDto dto)
+{
+    var evolutionChain = new PokemonEvolutionChain()
+    {
+        PokemonId = int.Parse(
+            dto.Species.Url.Replace("https://pokeapi.co/api/v2/pokemon-species/", "").Replace("/", "")),
+        Item = dto.EvolutionDetails.FirstOrDefault()?.Item?.Name,
+        Level = dto.EvolutionDetails.FirstOrDefault()?.MinLevel
+    };
+
+    if (dto.EvolvesTo?.Any() ?? false)
+        evolutionChain.EvolutionChain = dto.EvolvesTo?.Select(ParseEvolutionChain);
+
+    return evolutionChain;
 }

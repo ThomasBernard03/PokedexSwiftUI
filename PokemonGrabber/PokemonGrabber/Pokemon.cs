@@ -25,6 +25,9 @@ public class Pokemon
     [JsonProperty("base_happiness")]
     public int BaseHappiness { get; set; } 
     
+    [JsonProperty("shape")]
+    public string Shape { get; set; } 
+    
     [JsonProperty("capture_rate")]
     public int CaptureRate { get; set; }
     
@@ -39,6 +42,9 @@ public class Pokemon
     
     [JsonProperty("abilities")]
     public IEnumerable<string> Abilities { get; set; }
+    
+    [JsonProperty("evolution_chain")]
+    public PokemonEvolutionChain? EvolutionChain { get; set; }
 }
 
 public class PokemonStat
@@ -48,6 +54,21 @@ public class PokemonStat
     
     [JsonProperty("value")]
     public int Value { get; set; }
+}
+
+public class PokemonEvolutionChain
+{
+    [JsonProperty("pokemon_id")]
+    public int PokemonId { get; set; }
+    
+    [JsonProperty("level")]
+    public int? Level { get; set; }
+    
+    [JsonProperty("item")]
+    public string? Item { get; set; }
+    
+    [JsonProperty("evolution_chain")]
+    public IEnumerable<PokemonEvolutionChain>? EvolutionChain { get; set; }
 }
 
 public class PokemonSprite

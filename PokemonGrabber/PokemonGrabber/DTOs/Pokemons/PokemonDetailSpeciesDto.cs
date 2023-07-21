@@ -16,6 +16,12 @@ public class PokemonDetailSpeciesDto
     
     [JsonProperty("base_happiness")]
     public int BaseHappiness { get; set; } 
+    
+    [JsonProperty("shape")]
+    public LinkDto Shape { get; set; } 
+    
+    [JsonProperty("evolution_chain")]
+    public LinkDto EvolutionChain { get; set; } 
 }
 
 public class PokemonDetailSpeciesDetailFlavorTextDto

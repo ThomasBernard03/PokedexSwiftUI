@@ -7,6 +7,7 @@
         "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 45,
         "types": [
             "grass",
@@ -45,7 +46,27 @@
         "abilities": [
             "overgrow",
             "chlorophyll"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 1,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 2,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 3,
+                            "level": 32,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 2,
@@ -55,6 +76,7 @@
         "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 45,
         "types": [
             "grass",
@@ -93,7 +115,27 @@
         "abilities": [
             "overgrow",
             "chlorophyll"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 1,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 2,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 3,
+                            "level": 32,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 3,
@@ -103,6 +145,7 @@
         "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 45,
         "types": [
             "grass",
@@ -141,7 +184,27 @@
         "abilities": [
             "overgrow",
             "chlorophyll"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 1,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 2,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 3,
+                            "level": 32,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 4,
@@ -151,6 +214,7 @@
         "description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "fire"
@@ -188,7 +252,27 @@
         "abilities": [
             "blaze",
             "solar-power"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 4,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 5,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 6,
+                            "level": 36,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 5,
@@ -198,6 +282,7 @@
         "description": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "fire"
@@ -235,7 +320,27 @@
         "abilities": [
             "blaze",
             "solar-power"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 4,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 5,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 6,
+                            "level": 36,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 6,
@@ -245,6 +350,7 @@
         "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "fire",
@@ -283,7 +389,27 @@
         "abilities": [
             "blaze",
             "solar-power"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 4,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 5,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 6,
+                            "level": 36,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 7,
@@ -293,6 +419,7 @@
         "description": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "water"
@@ -330,7 +457,27 @@
         "abilities": [
             "torrent",
             "rain-dish"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 7,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 8,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 9,
+                            "level": 36,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 8,
@@ -340,6 +487,7 @@
         "description": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "water"
@@ -377,7 +525,27 @@
         "abilities": [
             "torrent",
             "rain-dish"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 7,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 8,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 9,
+                            "level": 36,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 9,
@@ -387,6 +555,7 @@
         "description": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "water"
@@ -424,7 +593,27 @@
         "abilities": [
             "torrent",
             "rain-dish"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 7,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 8,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 9,
+                            "level": 36,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 10,
@@ -434,6 +623,7 @@
         "description": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "armor",
         "capture_rate": 255,
         "types": [
             "bug"
@@ -471,7 +661,27 @@
         "abilities": [
             "shield-dust",
             "run-away"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 10,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 11,
+                    "level": 7,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 12,
+                            "level": 10,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 11,
@@ -481,6 +691,7 @@
         "description": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "squiggle",
         "capture_rate": 120,
         "types": [
             "bug"
@@ -517,7 +728,27 @@
         ],
         "abilities": [
             "shed-skin"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 10,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 11,
+                    "level": 7,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 12,
+                            "level": 10,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 12,
@@ -527,6 +758,7 @@
         "description": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "bug-wings",
         "capture_rate": 45,
         "types": [
             "bug",
@@ -565,7 +797,27 @@
         "abilities": [
             "compound-eyes",
             "tinted-lens"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 10,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 11,
+                    "level": 7,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 12,
+                            "level": 10,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 13,
@@ -575,6 +827,7 @@
         "description": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "armor",
         "capture_rate": 255,
         "types": [
             "bug",
@@ -613,7 +866,27 @@
         "abilities": [
             "shield-dust",
             "run-away"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 13,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 14,
+                    "level": 7,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 15,
+                            "level": 10,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 14,
@@ -623,6 +896,7 @@
         "description": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "squiggle",
         "capture_rate": 120,
         "types": [
             "bug",
@@ -660,7 +934,27 @@
         ],
         "abilities": [
             "shed-skin"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 13,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 14,
+                    "level": 7,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 15,
+                            "level": 10,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 15,
@@ -670,6 +964,7 @@
         "description": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "bug-wings",
         "capture_rate": 45,
         "types": [
             "bug",
@@ -708,7 +1003,27 @@
         "abilities": [
             "swarm",
             "sniper"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 13,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 14,
+                    "level": 7,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 15,
+                            "level": 10,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 16,
@@ -718,6 +1033,7 @@
         "description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
         "growth_rate": "medium-slow",
         "base_happiness": 70,
+        "shape": "wings",
         "capture_rate": 255,
         "types": [
             "normal",
@@ -757,7 +1073,27 @@
             "keen-eye",
             "tangled-feet",
             "big-pecks"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 16,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 17,
+                    "level": 18,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 18,
+                            "level": 36,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 17,
@@ -767,6 +1103,7 @@
         "description": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder.",
         "growth_rate": "medium-slow",
         "base_happiness": 70,
+        "shape": "wings",
         "capture_rate": 120,
         "types": [
             "normal",
@@ -806,7 +1143,27 @@
             "keen-eye",
             "tangled-feet",
             "big-pecks"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 16,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 17,
+                    "level": 18,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 18,
+                            "level": 36,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 18,
@@ -816,6 +1173,7 @@
         "description": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
         "growth_rate": "medium-slow",
         "base_happiness": 70,
+        "shape": "wings",
         "capture_rate": 45,
         "types": [
             "normal",
@@ -855,7 +1213,27 @@
             "keen-eye",
             "tangled-feet",
             "big-pecks"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 16,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 17,
+                    "level": 18,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 18,
+                            "level": 36,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 19,
@@ -865,6 +1243,7 @@
         "description": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "quadruped",
         "capture_rate": 255,
         "types": [
             "normal"
@@ -903,7 +1282,20 @@
             "run-away",
             "guts",
             "hustle"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 19,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 20,
+                    "level": 20,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 20,
@@ -913,6 +1305,7 @@
         "description": "It uses its whis­ kers to maintain its balance. It apparently slows down if they are cut off.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "quadruped",
         "capture_rate": 127,
         "types": [
             "normal"
@@ -951,7 +1344,20 @@
             "run-away",
             "guts",
             "hustle"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 19,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 20,
+                    "level": 20,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 21,
@@ -961,6 +1367,7 @@
         "description": "It flaps its small wings busily to fly. Using its beak, it searches in grass for prey.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "wings",
         "capture_rate": 255,
         "types": [
             "normal",
@@ -999,7 +1406,20 @@
         "abilities": [
             "keen-eye",
             "sniper"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 21,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 22,
+                    "level": 20,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 22,
@@ -1009,6 +1429,7 @@
         "description": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "wings",
         "capture_rate": 90,
         "types": [
             "normal",
@@ -1047,7 +1468,20 @@
         "abilities": [
             "keen-eye",
             "sniper"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 21,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 22,
+                    "level": 20,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 23,
@@ -1057,6 +1491,7 @@
         "description": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "squiggle",
         "capture_rate": 255,
         "types": [
             "poison"
@@ -1095,7 +1530,20 @@
             "intimidate",
             "shed-skin",
             "unnerve"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 23,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 24,
+                    "level": 22,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 24,
@@ -1105,6 +1553,7 @@
         "description": "It is rumored that the ferocious warning markings on its belly differ from area to area.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "squiggle",
         "capture_rate": 90,
         "types": [
             "poison"
@@ -1143,7 +1592,20 @@
             "intimidate",
             "shed-skin",
             "unnerve"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 23,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 24,
+                    "level": 22,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 25,
@@ -1153,6 +1615,7 @@
         "description": "When several of these POKéMON gather, their electricity could build and cause lightning storms.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 190,
         "types": [
             "electric"
@@ -1190,7 +1653,27 @@
         "abilities": [
             "static",
             "lightning-rod"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 172,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 25,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 26,
+                            "level": null,
+                            "item": "thunder-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 26,
@@ -1200,6 +1683,7 @@
         "description": "Its long tail serves as a ground to protect itself from its own high-voltage power.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 75,
         "types": [
             "electric"
@@ -1237,7 +1721,27 @@
         "abilities": [
             "static",
             "lightning-rod"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 172,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 25,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 26,
+                            "level": null,
+                            "item": "thunder-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 27,
@@ -1247,6 +1751,7 @@
         "description": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 255,
         "types": [
             "ground"
@@ -1284,7 +1789,20 @@
         "abilities": [
             "sand-veil",
             "sand-rush"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 27,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 28,
+                    "level": 22,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 28,
@@ -1294,6 +1812,7 @@
         "description": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 90,
         "types": [
             "ground"
@@ -1331,7 +1850,20 @@
         "abilities": [
             "sand-veil",
             "sand-rush"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 27,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 28,
+                    "level": 22,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 29,
@@ -1341,6 +1873,7 @@
         "description": "Although small, its venomous barbs render this POKéMON dangerous. The female has smaller horns.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 235,
         "types": [
             "poison"
@@ -1379,7 +1912,27 @@
             "poison-point",
             "rivalry",
             "hustle"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 29,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 30,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 31,
+                            "level": null,
+                            "item": "moon-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 30,
@@ -1389,6 +1942,7 @@
         "description": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 120,
         "types": [
             "poison"
@@ -1427,7 +1981,27 @@
             "poison-point",
             "rivalry",
             "hustle"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 29,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 30,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 31,
+                            "level": null,
+                            "item": "moon-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 31,
@@ -1437,6 +2011,7 @@
         "description": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "poison",
@@ -1476,7 +2051,27 @@
             "poison-point",
             "rivalry",
             "sheer-force"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 29,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 30,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 31,
+                            "level": null,
+                            "item": "moon-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 32,
@@ -1486,6 +2081,7 @@
         "description": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 235,
         "types": [
             "poison"
@@ -1524,7 +2120,27 @@
             "poison-point",
             "rivalry",
             "hustle"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 32,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 33,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 34,
+                            "level": null,
+                            "item": "moon-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 33,
@@ -1534,6 +2150,7 @@
         "description": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 120,
         "types": [
             "poison"
@@ -1572,7 +2189,27 @@
             "poison-point",
             "rivalry",
             "hustle"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 32,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 33,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 34,
+                            "level": null,
+                            "item": "moon-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 34,
@@ -1582,6 +2219,7 @@
         "description": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "poison",
@@ -1621,7 +2259,27 @@
             "poison-point",
             "rivalry",
             "sheer-force"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 32,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 33,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 34,
+                            "level": null,
+                            "item": "moon-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 35,
@@ -1631,6 +2289,7 @@
         "description": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas.",
         "growth_rate": "fast",
         "base_happiness": 140,
+        "shape": "upright",
         "capture_rate": 150,
         "types": [
             "fairy"
@@ -1669,7 +2328,27 @@
             "cute-charm",
             "magic-guard",
             "friend-guard"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 173,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 35,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 36,
+                            "level": null,
+                            "item": "moon-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 36,
@@ -1679,6 +2358,7 @@
         "description": "A timid fairy POKéMON that is rarely seen. It will run and hide the moment it senses people.",
         "growth_rate": "fast",
         "base_happiness": 140,
+        "shape": "upright",
         "capture_rate": 25,
         "types": [
             "fairy"
@@ -1717,7 +2397,27 @@
             "cute-charm",
             "magic-guard",
             "unaware"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 173,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 35,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 36,
+                            "level": null,
+                            "item": "moon-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 37,
@@ -1727,6 +2427,7 @@
         "description": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 190,
         "types": [
             "fire"
@@ -1764,7 +2465,20 @@
         "abilities": [
             "flash-fire",
             "drought"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 37,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 38,
+                    "level": null,
+                    "item": "fire-stone",
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 38,
@@ -1774,6 +2488,7 @@
         "description": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 75,
         "types": [
             "fire"
@@ -1811,7 +2526,20 @@
         "abilities": [
             "flash-fire",
             "drought"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 37,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 38,
+                    "level": null,
+                    "item": "fire-stone",
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 39,
@@ -1821,6 +2549,7 @@
         "description": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.",
         "growth_rate": "fast",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 170,
         "types": [
             "normal",
@@ -1860,7 +2589,27 @@
             "cute-charm",
             "competitive",
             "friend-guard"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 174,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 39,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 40,
+                            "level": null,
+                            "item": "moon-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 40,
@@ -1870,6 +2619,7 @@
         "description": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.",
         "growth_rate": "fast",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 50,
         "types": [
             "normal",
@@ -1909,7 +2659,27 @@
             "cute-charm",
             "competitive",
             "frisk"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 174,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 39,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 40,
+                            "level": null,
+                            "item": "moon-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 41,
@@ -1919,6 +2689,7 @@
         "description": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "wings",
         "capture_rate": 255,
         "types": [
             "poison",
@@ -1957,7 +2728,27 @@
         "abilities": [
             "inner-focus",
             "infiltrator"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 41,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 42,
+                    "level": 22,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 169,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 42,
@@ -1967,6 +2758,7 @@
         "description": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "wings",
         "capture_rate": 90,
         "types": [
             "poison",
@@ -2005,7 +2797,27 @@
         "abilities": [
             "inner-focus",
             "infiltrator"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 41,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 42,
+                    "level": 22,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 169,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 43,
@@ -2015,6 +2827,7 @@
         "description": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "legs",
         "capture_rate": 255,
         "types": [
             "grass",
@@ -2053,7 +2866,33 @@
         "abilities": [
             "chlorophyll",
             "run-away"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 43,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 44,
+                    "level": 21,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 45,
+                            "level": null,
+                            "item": "leaf-stone",
+                            "evolution_chain": null
+                        },
+                        {
+                            "pokemon_id": 182,
+                            "level": null,
+                            "item": "sun-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 44,
@@ -2063,6 +2902,7 @@
         "description": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 120,
         "types": [
             "grass",
@@ -2101,7 +2941,33 @@
         "abilities": [
             "chlorophyll",
             "stench"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 43,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 44,
+                    "level": 21,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 45,
+                            "level": null,
+                            "item": "leaf-stone",
+                            "evolution_chain": null
+                        },
+                        {
+                            "pokemon_id": 182,
+                            "level": null,
+                            "item": "sun-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 45,
@@ -2111,6 +2977,7 @@
         "description": "It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 45,
         "types": [
             "grass",
@@ -2149,7 +3016,33 @@
         "abilities": [
             "chlorophyll",
             "effect-spore"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 43,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 44,
+                    "level": 21,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 45,
+                            "level": null,
+                            "item": "leaf-stone",
+                            "evolution_chain": null
+                        },
+                        {
+                            "pokemon_id": 182,
+                            "level": null,
+                            "item": "sun-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 46,
@@ -2159,6 +3052,7 @@
         "description": "Burrows to suck tree roots. The mushrooms on its back grow by draw­ ing nutrients from the bug host.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "armor",
         "capture_rate": 190,
         "types": [
             "bug",
@@ -2198,7 +3092,20 @@
             "effect-spore",
             "dry-skin",
             "damp"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 46,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 47,
+                    "level": 24,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 47,
@@ -2208,6 +3115,7 @@
         "description": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "armor",
         "capture_rate": 75,
         "types": [
             "bug",
@@ -2247,7 +3155,20 @@
             "effect-spore",
             "dry-skin",
             "damp"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 46,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 47,
+                    "level": 24,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 48,
@@ -2257,6 +3178,7 @@
         "description": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "humanoid",
         "capture_rate": 190,
         "types": [
             "bug",
@@ -2296,7 +3218,20 @@
             "compound-eyes",
             "tinted-lens",
             "run-away"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 48,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 49,
+                    "level": 31,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 49,
@@ -2306,6 +3241,7 @@
         "description": "The dustlike scales covering its wings are color-coded to indicate the kinds of poison it has.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "bug-wings",
         "capture_rate": 75,
         "types": [
             "bug",
@@ -2345,7 +3281,20 @@
             "shield-dust",
             "tinted-lens",
             "wonder-skin"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 48,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 49,
+                    "level": 31,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 50,
@@ -2355,6 +3304,7 @@
         "description": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "blob",
         "capture_rate": 255,
         "types": [
             "ground"
@@ -2393,7 +3343,20 @@
             "sand-veil",
             "arena-trap",
             "sand-force"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 50,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 51,
+                    "level": 26,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 51,
@@ -2403,6 +3366,7 @@
         "description": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "heads",
         "capture_rate": 50,
         "types": [
             "ground"
@@ -2441,7 +3405,20 @@
             "sand-veil",
             "arena-trap",
             "sand-force"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 50,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 51,
+                    "level": 26,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 52,
@@ -2451,6 +3428,7 @@
         "description": "It washes its face regularly to keep the coin on its forehead spotless. It doesn’t get along with Galarian Meowth.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 255,
         "types": [
             "normal"
@@ -2489,7 +3467,26 @@
             "pickup",
             "technician",
             "unnerve"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 52,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 53,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 863,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 53,
@@ -2499,6 +3496,7 @@
         "description": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 90,
         "types": [
             "normal"
@@ -2537,7 +3535,26 @@
             "limber",
             "technician",
             "unnerve"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 52,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 53,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 863,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 54,
@@ -2547,6 +3564,7 @@
         "description": "While lulling its enemies with its vacant look, this wily POKéMON will use psychokinetic powers.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 190,
         "types": [
             "water"
@@ -2585,7 +3603,20 @@
             "damp",
             "cloud-nine",
             "swift-swim"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 54,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 55,
+                    "level": 33,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 55,
@@ -2595,6 +3626,7 @@
         "description": "Often seen swim­ ming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 75,
         "types": [
             "water"
@@ -2633,7 +3665,20 @@
             "damp",
             "cloud-nine",
             "swift-swim"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 54,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 55,
+                    "level": 33,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 56,
@@ -2643,6 +3688,7 @@
         "description": "Extremely quick to anger. It could be docile one moment then thrashing away the next instant.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "upright",
         "capture_rate": 190,
         "types": [
             "fighting"
@@ -2681,7 +3727,27 @@
             "vital-spirit",
             "anger-point",
             "defiant"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 56,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 57,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 979,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 57,
@@ -2691,6 +3757,7 @@
         "description": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "upright",
         "capture_rate": 75,
         "types": [
             "fighting"
@@ -2729,7 +3796,27 @@
             "vital-spirit",
             "anger-point",
             "defiant"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 56,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 57,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 979,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 58,
@@ -2739,6 +3826,7 @@
         "description": "Very protective of its territory. It will bark and bite to repel intruders from its space.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 190,
         "types": [
             "fire"
@@ -2777,7 +3865,20 @@
             "intimidate",
             "flash-fire",
             "justified"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 58,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 59,
+                    "level": null,
+                    "item": "fire-stone",
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 59,
@@ -2787,6 +3888,7 @@
         "description": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 75,
         "types": [
             "fire"
@@ -2825,7 +3927,20 @@
             "intimidate",
             "flash-fire",
             "justified"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 58,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 59,
+                    "level": null,
+                    "item": "fire-stone",
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 60,
@@ -2835,6 +3950,7 @@
         "description": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "legs",
         "capture_rate": 255,
         "types": [
             "water"
@@ -2873,7 +3989,33 @@
             "water-absorb",
             "damp",
             "swift-swim"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 60,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 61,
+                    "level": 25,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 62,
+                            "level": null,
+                            "item": "water-stone",
+                            "evolution_chain": null
+                        },
+                        {
+                            "pokemon_id": 186,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 61,
@@ -2883,6 +4025,7 @@
         "description": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 120,
         "types": [
             "water"
@@ -2921,7 +4064,33 @@
             "water-absorb",
             "damp",
             "swift-swim"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 60,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 61,
+                    "level": 25,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 62,
+                            "level": null,
+                            "item": "water-stone",
+                            "evolution_chain": null
+                        },
+                        {
+                            "pokemon_id": 186,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 62,
@@ -2931,6 +4100,7 @@
         "description": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 45,
         "types": [
             "water",
@@ -2970,7 +4140,33 @@
             "water-absorb",
             "damp",
             "swift-swim"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 60,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 61,
+                    "level": 25,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 62,
+                            "level": null,
+                            "item": "water-stone",
+                            "evolution_chain": null
+                        },
+                        {
+                            "pokemon_id": 186,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 63,
@@ -2980,6 +4176,7 @@
         "description": "Using its ability to read minds, it will identify impending danger and TELEPORT to safety.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 200,
         "types": [
             "psychic"
@@ -3018,7 +4215,27 @@
             "synchronize",
             "inner-focus",
             "magic-guard"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 63,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 64,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 65,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 64,
@@ -3028,6 +4245,7 @@
         "description": "It emits special alpha waves from its body that induce headaches just by being close by.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 100,
         "types": [
             "psychic"
@@ -3066,7 +4284,27 @@
             "synchronize",
             "inner-focus",
             "magic-guard"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 63,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 64,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 65,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 65,
@@ -3076,6 +4314,7 @@
         "description": "Its brain can out­ perform a super­ computer. Its intelligence quotient is said to be 5,000.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 50,
         "types": [
             "psychic"
@@ -3114,7 +4353,27 @@
             "synchronize",
             "inner-focus",
             "magic-guard"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 63,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 64,
+                    "level": 16,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 65,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 66,
@@ -3124,6 +4383,7 @@
         "description": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 180,
         "types": [
             "fighting"
@@ -3162,7 +4422,27 @@
             "guts",
             "no-guard",
             "steadfast"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 66,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 67,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 68,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 67,
@@ -3172,6 +4452,7 @@
         "description": "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 90,
         "types": [
             "fighting"
@@ -3210,7 +4491,27 @@
             "guts",
             "no-guard",
             "steadfast"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 66,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 67,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 68,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 68,
@@ -3220,6 +4521,7 @@
         "description": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 45,
         "types": [
             "fighting"
@@ -3258,7 +4560,27 @@
             "guts",
             "no-guard",
             "steadfast"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 66,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 67,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 68,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 69,
@@ -3268,6 +4590,7 @@
         "description": "A carnivorous POKéMON that traps and eats bugs. It uses its root feet to soak up needed moisture.",
         "growth_rate": "medium-slow",
         "base_happiness": 70,
+        "shape": "humanoid",
         "capture_rate": 255,
         "types": [
             "grass",
@@ -3306,7 +4629,27 @@
         "abilities": [
             "chlorophyll",
             "gluttony"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 69,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 70,
+                    "level": 21,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 71,
+                            "level": null,
+                            "item": "leaf-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 70,
@@ -3316,6 +4659,7 @@
         "description": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID.",
         "growth_rate": "medium-slow",
         "base_happiness": 70,
+        "shape": "blob",
         "capture_rate": 120,
         "types": [
             "grass",
@@ -3354,7 +4698,27 @@
         "abilities": [
             "chlorophyll",
             "gluttony"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 69,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 70,
+                    "level": 21,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 71,
+                            "level": null,
+                            "item": "leaf-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 71,
@@ -3364,6 +4728,7 @@
         "description": "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
         "growth_rate": "medium-slow",
         "base_happiness": 70,
+        "shape": "blob",
         "capture_rate": 45,
         "types": [
             "grass",
@@ -3402,7 +4767,27 @@
         "abilities": [
             "chlorophyll",
             "gluttony"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 69,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 70,
+                    "level": 21,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 71,
+                            "level": null,
+                            "item": "leaf-stone",
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 72,
@@ -3412,6 +4797,7 @@
         "description": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "tentacles",
         "capture_rate": 190,
         "types": [
             "water",
@@ -3451,7 +4837,20 @@
             "clear-body",
             "liquid-ooze",
             "rain-dish"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 72,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 73,
+                    "level": 30,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 73,
@@ -3461,6 +4860,7 @@
         "description": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "tentacles",
         "capture_rate": 60,
         "types": [
             "water",
@@ -3500,7 +4900,20 @@
             "clear-body",
             "liquid-ooze",
             "rain-dish"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 72,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 73,
+                    "level": 30,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 74,
@@ -3510,6 +4923,7 @@
         "description": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.",
         "growth_rate": "medium-slow",
         "base_happiness": 70,
+        "shape": "arms",
         "capture_rate": 255,
         "types": [
             "rock",
@@ -3549,7 +4963,27 @@
             "rock-head",
             "sturdy",
             "sand-veil"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 74,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 75,
+                    "level": 25,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 76,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 75,
@@ -3559,6 +4993,7 @@
         "description": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
         "growth_rate": "medium-slow",
         "base_happiness": 70,
+        "shape": "humanoid",
         "capture_rate": 120,
         "types": [
             "rock",
@@ -3598,7 +5033,27 @@
             "rock-head",
             "sturdy",
             "sand-veil"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 74,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 75,
+                    "level": 25,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 76,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 76,
@@ -3608,6 +5063,7 @@
         "description": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.",
         "growth_rate": "medium-slow",
         "base_happiness": 70,
+        "shape": "humanoid",
         "capture_rate": 45,
         "types": [
             "rock",
@@ -3647,7 +5103,27 @@
             "rock-head",
             "sturdy",
             "sand-veil"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 74,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 75,
+                    "level": 25,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 76,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 77,
@@ -3657,6 +5133,7 @@
         "description": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 190,
         "types": [
             "fire"
@@ -3695,7 +5172,20 @@
             "run-away",
             "flash-fire",
             "flame-body"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 77,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 78,
+                    "level": 40,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 78,
@@ -3705,6 +5195,7 @@
         "description": "Very competitive, this POKéMON will chase anything that moves fast in the hopes of racing it.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 60,
         "types": [
             "fire"
@@ -3743,7 +5234,20 @@
             "run-away",
             "flash-fire",
             "flame-body"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 77,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 78,
+                    "level": 40,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 79,
@@ -3753,6 +5257,7 @@
         "description": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 190,
         "types": [
             "water",
@@ -3792,7 +5297,26 @@
             "oblivious",
             "own-tempo",
             "regenerator"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 79,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 80,
+                    "level": 37,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 199,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 80,
@@ -3802,6 +5326,7 @@
         "description": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 75,
         "types": [
             "water",
@@ -3841,7 +5366,26 @@
             "oblivious",
             "own-tempo",
             "regenerator"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 79,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 80,
+                    "level": 37,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 199,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 81,
@@ -3851,6 +5395,7 @@
         "description": "Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "arms",
         "capture_rate": 190,
         "types": [
             "electric",
@@ -3890,7 +5435,27 @@
             "magnet-pull",
             "sturdy",
             "analytic"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 81,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 82,
+                    "level": 30,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 462,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 82,
@@ -3900,6 +5465,7 @@
         "description": "Formed by several MAGNEMITEs linked together. They frequently appear when sunspots flare up.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "heads",
         "capture_rate": 60,
         "types": [
             "electric",
@@ -3939,7 +5505,27 @@
             "magnet-pull",
             "sturdy",
             "analytic"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 81,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 82,
+                    "level": 30,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 462,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 83,
@@ -3949,6 +5535,7 @@
         "description": "The sprig of green onions it holds is its weapon. It is used much like a metal sword.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "wings",
         "capture_rate": 45,
         "types": [
             "normal",
@@ -3988,7 +5575,20 @@
             "keen-eye",
             "inner-focus",
             "defiant"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 83,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 865,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 84,
@@ -3998,6 +5598,7 @@
         "description": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "legs",
         "capture_rate": 190,
         "types": [
             "normal",
@@ -4037,7 +5638,20 @@
             "run-away",
             "early-bird",
             "tangled-feet"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 84,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 85,
+                    "level": 31,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 85,
@@ -4047,6 +5661,7 @@
         "description": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "legs",
         "capture_rate": 45,
         "types": [
             "normal",
@@ -4086,7 +5701,20 @@
             "run-away",
             "early-bird",
             "tangled-feet"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 84,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 85,
+                    "level": 31,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 86,
@@ -4096,6 +5724,7 @@
         "description": "The protruding horn on its head is very hard. It is used for bashing through thick ice.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "fish",
         "capture_rate": 190,
         "types": [
             "water"
@@ -4134,7 +5763,20 @@
             "thick-fat",
             "hydration",
             "ice-body"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 86,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 87,
+                    "level": 34,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 87,
@@ -4144,6 +5786,7 @@
         "description": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "fish",
         "capture_rate": 75,
         "types": [
             "water",
@@ -4183,7 +5826,20 @@
             "thick-fat",
             "hydration",
             "ice-body"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 86,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 87,
+                    "level": 34,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 88,
@@ -4193,6 +5849,7 @@
         "description": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "arms",
         "capture_rate": 190,
         "types": [
             "poison"
@@ -4231,7 +5888,20 @@
             "stench",
             "sticky-hold",
             "poison-touch"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 88,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 89,
+                    "level": 38,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 89,
@@ -4241,6 +5911,7 @@
         "description": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "arms",
         "capture_rate": 75,
         "types": [
             "poison"
@@ -4279,7 +5950,20 @@
             "stench",
             "sticky-hold",
             "poison-touch"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 88,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 89,
+                    "level": 38,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 90,
@@ -4289,6 +5973,7 @@
         "description": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "ball",
         "capture_rate": 190,
         "types": [
             "water"
@@ -4327,7 +6012,20 @@
             "shell-armor",
             "skill-link",
             "overcoat"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 90,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 91,
+                    "level": null,
+                    "item": "water-stone",
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 91,
@@ -4337,6 +6035,7 @@
         "description": "When attacked, it launches its horns in quick volleys. Its innards have never been seen.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "ball",
         "capture_rate": 60,
         "types": [
             "water",
@@ -4376,7 +6075,20 @@
             "shell-armor",
             "skill-link",
             "overcoat"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 90,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 91,
+                    "level": null,
+                    "item": "water-stone",
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 92,
@@ -4386,6 +6098,7 @@
         "description": "Almost invisible, this gaseous POKéMON cloaks the target and puts it to sleep without notice.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "ball",
         "capture_rate": 190,
         "types": [
             "ghost",
@@ -4423,7 +6136,27 @@
         ],
         "abilities": [
             "levitate"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 92,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 93,
+                    "level": 25,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 94,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 93,
@@ -4433,6 +6166,7 @@
         "description": "Because of its ability to slip through block walls, it is said to be from an­ other dimension.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "arms",
         "capture_rate": 90,
         "types": [
             "ghost",
@@ -4470,7 +6204,27 @@
         ],
         "abilities": [
             "levitate"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 92,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 93,
+                    "level": 25,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 94,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 94,
@@ -4480,6 +6234,7 @@
         "description": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright.",
         "growth_rate": "medium-slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "ghost",
@@ -4517,7 +6272,27 @@
         ],
         "abilities": [
             "cursed-body"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 92,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 93,
+                    "level": 25,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 94,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 95,
@@ -4527,6 +6302,7 @@
         "description": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "squiggle",
         "capture_rate": 45,
         "types": [
             "rock",
@@ -4566,7 +6342,20 @@
             "rock-head",
             "sturdy",
             "weak-armor"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 95,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 208,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 96,
@@ -4576,6 +6365,7 @@
         "description": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "humanoid",
         "capture_rate": 190,
         "types": [
             "psychic"
@@ -4614,7 +6404,20 @@
             "insomnia",
             "forewarn",
             "inner-focus"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 96,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 97,
+                    "level": 26,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 97,
@@ -4624,6 +6427,7 @@
         "description": "When it locks eyes with an enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "humanoid",
         "capture_rate": 75,
         "types": [
             "psychic"
@@ -4662,7 +6466,20 @@
             "insomnia",
             "forewarn",
             "inner-focus"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 96,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 97,
+                    "level": 26,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 98,
@@ -4672,6 +6489,7 @@
         "description": "Its pincers are not only powerful weapons, they are used for balance when walking sideways.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "armor",
         "capture_rate": 225,
         "types": [
             "water"
@@ -4710,7 +6528,20 @@
             "hyper-cutter",
             "shell-armor",
             "sheer-force"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 98,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 99,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 99,
@@ -4720,6 +6551,7 @@
         "description": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "armor",
         "capture_rate": 60,
         "types": [
             "water"
@@ -4758,7 +6590,20 @@
             "hyper-cutter",
             "shell-armor",
             "sheer-force"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 98,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 99,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 100,
@@ -4768,6 +6613,7 @@
         "description": "Usually found in power plants. Easily mistaken for a POKé BALL, they have zapped many people.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "ball",
         "capture_rate": 190,
         "types": [
             "electric"
@@ -4806,7 +6652,20 @@
             "soundproof",
             "static",
             "aftermath"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 100,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 101,
+                    "level": 30,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 101,
@@ -4816,6 +6675,7 @@
         "description": "It stores electric energy under very high pressure. It often explodes with little or no provocation.",
         "growth_rate": "medium",
         "base_happiness": 70,
+        "shape": "ball",
         "capture_rate": 60,
         "types": [
             "electric"
@@ -4854,7 +6714,20 @@
             "soundproof",
             "static",
             "aftermath"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 100,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 101,
+                    "level": 30,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 102,
@@ -4864,6 +6737,7 @@
         "description": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "heads",
         "capture_rate": 90,
         "types": [
             "grass",
@@ -4902,7 +6776,20 @@
         "abilities": [
             "chlorophyll",
             "harvest"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 102,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 103,
+                    "level": null,
+                    "item": "leaf-stone",
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 103,
@@ -4912,6 +6799,7 @@
         "description": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "legs",
         "capture_rate": 45,
         "types": [
             "grass",
@@ -4950,7 +6838,20 @@
         "abilities": [
             "chlorophyll",
             "harvest"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 102,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 103,
+                    "level": null,
+                    "item": "leaf-stone",
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 104,
@@ -4960,6 +6861,7 @@
         "description": "Because it never removes its skull helmet, no one has ever seen this POKéMON's real face.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 190,
         "types": [
             "ground"
@@ -4998,7 +6900,20 @@
             "rock-head",
             "lightning-rod",
             "battle-armor"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 104,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 105,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 105,
@@ -5008,6 +6923,7 @@
         "description": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 75,
         "types": [
             "ground"
@@ -5046,7 +6962,20 @@
             "rock-head",
             "lightning-rod",
             "battle-armor"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 104,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 105,
+                    "level": 28,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 106,
@@ -5056,6 +6985,7 @@
         "description": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 45,
         "types": [
             "fighting"
@@ -5094,7 +7024,32 @@
             "limber",
             "reckless",
             "unburden"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 236,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 106,
+                    "level": 20,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 107,
+                    "level": 20,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 237,
+                    "level": 20,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 107,
@@ -5104,6 +7059,7 @@
         "description": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 45,
         "types": [
             "fighting"
@@ -5142,7 +7098,32 @@
             "keen-eye",
             "iron-fist",
             "inner-focus"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 236,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 106,
+                    "level": 20,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 107,
+                    "level": 20,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 237,
+                    "level": 20,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 108,
@@ -5152,6 +7133,7 @@
         "description": "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "normal"
@@ -5190,7 +7172,20 @@
             "own-tempo",
             "oblivious",
             "cloud-nine"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 108,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 463,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 109,
@@ -5200,6 +7195,7 @@
         "description": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "ball",
         "capture_rate": 190,
         "types": [
             "poison"
@@ -5238,7 +7234,20 @@
             "levitate",
             "neutralizing-gas",
             "stench"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 109,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 110,
+                    "level": 35,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 110,
@@ -5248,6 +7257,7 @@
         "description": "Where two kinds of poison gases meet, 2 KOFFINGs can fuse into a WEEZING over many years.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "heads",
         "capture_rate": 60,
         "types": [
             "poison"
@@ -5286,7 +7296,20 @@
             "levitate",
             "neutralizing-gas",
             "stench"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 109,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 110,
+                    "level": 35,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 111,
@@ -5296,6 +7319,7 @@
         "description": "A POKéMON with a one-track mind. Once it charges,  it won't stop running until it falls asleep.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 120,
         "types": [
             "ground",
@@ -5335,7 +7359,27 @@
             "lightning-rod",
             "rock-head",
             "reckless"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 111,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 112,
+                    "level": 42,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 464,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 112,
@@ -5345,6 +7389,7 @@
         "description": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 60,
         "types": [
             "ground",
@@ -5384,7 +7429,27 @@
             "lightning-rod",
             "rock-head",
             "reckless"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 111,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 112,
+                    "level": 42,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 464,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 113,
@@ -5394,6 +7459,7 @@
         "description": "A rare and elusive POKéMON that is said to bring happiness to those who manage to get it.",
         "growth_rate": "fast",
         "base_happiness": 140,
+        "shape": "upright",
         "capture_rate": 30,
         "types": [
             "normal"
@@ -5432,7 +7498,27 @@
             "natural-cure",
             "serene-grace",
             "healer"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 440,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 113,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 242,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 114,
@@ -5442,6 +7528,7 @@
         "description": "The whole body is swathed with wide vines that are similar to sea­ weed. Its vines shake as it walks.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "legs",
         "capture_rate": 45,
         "types": [
             "grass"
@@ -5480,7 +7567,20 @@
             "chlorophyll",
             "leaf-guard",
             "regenerator"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 114,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 465,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 115,
@@ -5490,6 +7590,7 @@
         "description": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "normal"
@@ -5528,7 +7629,13 @@
             "early-bird",
             "scrappy",
             "inner-focus"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 115,
+            "level": null,
+            "item": null,
+            "evolution_chain": null
+        }
     },
     {
         "id": 116,
@@ -5538,6 +7645,7 @@
         "description": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "blob",
         "capture_rate": 225,
         "types": [
             "water"
@@ -5576,7 +7684,27 @@
             "swift-swim",
             "sniper",
             "damp"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 116,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 117,
+                    "level": 32,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 230,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 117,
@@ -5586,6 +7714,7 @@
         "description": "Capable of swim­ ming backwards by rapidly flapping its wing-like pectoral fins and stout tail.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "blob",
         "capture_rate": 75,
         "types": [
             "water"
@@ -5624,7 +7753,27 @@
             "poison-point",
             "sniper",
             "damp"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 116,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 117,
+                    "level": 32,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 230,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 118,
@@ -5634,6 +7783,7 @@
         "description": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "fish",
         "capture_rate": 225,
         "types": [
             "water"
@@ -5672,7 +7822,20 @@
             "swift-swim",
             "water-veil",
             "lightning-rod"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 118,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 119,
+                    "level": 33,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 119,
@@ -5682,6 +7845,7 @@
         "description": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "fish",
         "capture_rate": 60,
         "types": [
             "water"
@@ -5720,7 +7884,20 @@
             "swift-swim",
             "water-veil",
             "lightning-rod"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 118,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 119,
+                    "level": 33,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 120,
@@ -5730,6 +7907,7 @@
         "description": "If its body is torn, it can grow back if the red core remains. The core flashes at midnight.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "blob",
         "capture_rate": 225,
         "types": [
             "water"
@@ -5768,7 +7946,20 @@
             "illuminate",
             "natural-cure",
             "analytic"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 120,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 121,
+                    "level": null,
+                    "item": "water-stone",
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 121,
@@ -5778,6 +7969,7 @@
         "description": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "blob",
         "capture_rate": 60,
         "types": [
             "water",
@@ -5817,7 +8009,20 @@
             "illuminate",
             "natural-cure",
             "analytic"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 120,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 121,
+                    "level": null,
+                    "item": "water-stone",
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 122,
@@ -5827,6 +8032,7 @@
         "description": "If interrupted while it is miming, it will slap around the offender with its broad hands.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 45,
         "types": [
             "psychic",
@@ -5866,7 +8072,27 @@
             "soundproof",
             "filter",
             "technician"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 439,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 122,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 866,
+                            "level": 42,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 123,
@@ -5876,6 +8102,7 @@
         "description": "With ninja-like agility and speed, it can create the illusion that there is more than one.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "bug-wings",
         "capture_rate": 45,
         "types": [
             "bug",
@@ -5915,7 +8142,26 @@
             "swarm",
             "technician",
             "steadfast"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 123,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 212,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 900,
+                    "level": null,
+                    "item": "black-augurite",
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 124,
@@ -5925,6 +8171,7 @@
         "description": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 45,
         "types": [
             "ice",
@@ -5964,7 +8211,20 @@
             "oblivious",
             "forewarn",
             "dry-skin"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 238,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 124,
+                    "level": 30,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 125,
@@ -5974,6 +8234,7 @@
         "description": "Normally found near power plants, they can wander away and cause major blackouts in cities.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "electric"
@@ -6011,7 +8272,27 @@
         "abilities": [
             "static",
             "vital-spirit"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 239,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 125,
+                    "level": 30,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 466,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 126,
@@ -6021,6 +8302,7 @@
         "description": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "fire"
@@ -6058,7 +8340,27 @@
         "abilities": [
             "flame-body",
             "vital-spirit"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 240,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 126,
+                    "level": 30,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 467,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 127,
@@ -6068,6 +8370,7 @@
         "description": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 45,
         "types": [
             "bug"
@@ -6106,7 +8409,13 @@
             "hyper-cutter",
             "mold-breaker",
             "moxie"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 127,
+            "level": null,
+            "item": null,
+            "evolution_chain": null
+        }
     },
     {
         "id": 128,
@@ -6116,6 +8425,7 @@
         "description": "When it targets an enemy, it charges furiously while whipping its body with its long tails.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 45,
         "types": [
             "normal"
@@ -6154,7 +8464,13 @@
             "intimidate",
             "anger-point",
             "sheer-force"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 128,
+            "level": null,
+            "item": null,
+            "evolution_chain": null
+        }
     },
     {
         "id": 129,
@@ -6164,6 +8480,7 @@
         "description": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "fish",
         "capture_rate": 255,
         "types": [
             "water"
@@ -6201,7 +8518,20 @@
         "abilities": [
             "swift-swim",
             "rattled"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 129,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 130,
+                    "level": 20,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 130,
@@ -6211,6 +8541,7 @@
         "description": "Once it begins to rampage, a GYARADOS will burn everything down, even in a harsh storm.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "squiggle",
         "capture_rate": 45,
         "types": [
             "water",
@@ -6249,7 +8580,20 @@
         "abilities": [
             "intimidate",
             "moxie"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 129,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 130,
+                    "level": 20,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 131,
@@ -6259,6 +8603,7 @@
         "description": "A POKéMON that has been over­ hunted almost to extinction. It can ferry people across the water.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "fish",
         "capture_rate": 45,
         "types": [
             "water",
@@ -6298,7 +8643,13 @@
             "water-absorb",
             "shell-armor",
             "hydration"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 131,
+            "level": null,
+            "item": null,
+            "evolution_chain": null
+        }
     },
     {
         "id": 132,
@@ -6308,6 +8659,7 @@
         "description": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "ball",
         "capture_rate": 35,
         "types": [
             "normal"
@@ -6345,7 +8697,13 @@
         "abilities": [
             "limber",
             "imposter"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 132,
+            "level": null,
+            "item": null,
+            "evolution_chain": null
+        }
     },
     {
         "id": 133,
@@ -6355,6 +8713,7 @@
         "description": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 45,
         "types": [
             "normal"
@@ -6393,7 +8752,62 @@
             "run-away",
             "adaptability",
             "anticipation"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 133,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 134,
+                    "level": null,
+                    "item": "water-stone",
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 135,
+                    "level": null,
+                    "item": "thunder-stone",
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 136,
+                    "level": null,
+                    "item": "fire-stone",
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 196,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 197,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 470,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 471,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 700,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 134,
@@ -6403,6 +8817,7 @@
         "description": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 45,
         "types": [
             "water"
@@ -6440,7 +8855,62 @@
         "abilities": [
             "water-absorb",
             "hydration"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 133,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 134,
+                    "level": null,
+                    "item": "water-stone",
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 135,
+                    "level": null,
+                    "item": "thunder-stone",
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 136,
+                    "level": null,
+                    "item": "fire-stone",
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 196,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 197,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 470,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 471,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 700,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 135,
@@ -6450,6 +8920,7 @@
         "description": "It accumulates negative ions in the atmosphere to blast out 10000- volt lightning bolts.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 45,
         "types": [
             "electric"
@@ -6487,7 +8958,62 @@
         "abilities": [
             "volt-absorb",
             "quick-feet"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 133,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 134,
+                    "level": null,
+                    "item": "water-stone",
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 135,
+                    "level": null,
+                    "item": "thunder-stone",
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 136,
+                    "level": null,
+                    "item": "fire-stone",
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 196,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 197,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 470,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 471,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 700,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 136,
@@ -6497,6 +9023,7 @@
         "description": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "quadruped",
         "capture_rate": 45,
         "types": [
             "fire"
@@ -6534,7 +9061,62 @@
         "abilities": [
             "flash-fire",
             "guts"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 133,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 134,
+                    "level": null,
+                    "item": "water-stone",
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 135,
+                    "level": null,
+                    "item": "thunder-stone",
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 136,
+                    "level": null,
+                    "item": "fire-stone",
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 196,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 197,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 470,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 471,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                },
+                {
+                    "pokemon_id": 700,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 137,
@@ -6544,6 +9126,7 @@
         "description": "A POKéMON that consists entirely of programming code. Capable of moving freely in cyberspace.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "legs",
         "capture_rate": 45,
         "types": [
             "normal"
@@ -6582,7 +9165,27 @@
             "trace",
             "download",
             "analytic"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 137,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 233,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 474,
+                            "level": null,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 138,
@@ -6592,6 +9195,7 @@
         "description": "Although long extinct, in rare cases, it can be genetically resurrected from fossils.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "tentacles",
         "capture_rate": 45,
         "types": [
             "rock",
@@ -6631,7 +9235,20 @@
             "swift-swim",
             "shell-armor",
             "weak-armor"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 138,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 139,
+                    "level": 40,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 139,
@@ -6641,6 +9258,7 @@
         "description": "A prehistoric POKéMON that died out when its heavy shell made it impossible to catch prey.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "tentacles",
         "capture_rate": 45,
         "types": [
             "rock",
@@ -6680,7 +9298,20 @@
             "swift-swim",
             "shell-armor",
             "weak-armor"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 138,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 139,
+                    "level": 40,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 140,
@@ -6690,6 +9321,7 @@
         "description": "A POKéMON that was resurrected from a fossil found in what was once the ocean floor eons ago.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "armor",
         "capture_rate": 45,
         "types": [
             "rock",
@@ -6729,7 +9361,20 @@
             "swift-swim",
             "battle-armor",
             "weak-armor"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 140,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 141,
+                    "level": 40,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 141,
@@ -6739,6 +9384,7 @@
         "description": "Its sleek shape is perfect for swim­ ming. It slashes prey with its claws and drains the body fluids.",
         "growth_rate": "medium",
         "base_happiness": 50,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "rock",
@@ -6778,7 +9424,20 @@
             "swift-swim",
             "battle-armor",
             "weak-armor"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 140,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 141,
+                    "level": 40,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 142,
@@ -6788,6 +9447,7 @@
         "description": "A Pokémon that roamed the skies in the dinosaur era. Its teeth are like saw blades.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "wings",
         "capture_rate": 45,
         "types": [
             "rock",
@@ -6827,7 +9487,13 @@
             "rock-head",
             "pressure",
             "unnerve"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 142,
+            "level": null,
+            "item": null,
+            "evolution_chain": null
+        }
     },
     {
         "id": 143,
@@ -6837,6 +9503,7 @@
         "description": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.",
         "growth_rate": "slow",
         "base_happiness": 50,
+        "shape": "humanoid",
         "capture_rate": 25,
         "types": [
             "normal"
@@ -6875,7 +9542,20 @@
             "immunity",
             "thick-fat",
             "gluttony"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 446,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 143,
+                    "level": null,
+                    "item": null,
+                    "evolution_chain": null
+                }
+            ]
+        }
     },
     {
         "id": 144,
@@ -6885,6 +9565,7 @@
         "description": "A legendary bird POKéMON that is said to appear to doomed people who are lost in icy mountains.",
         "growth_rate": "slow",
         "base_happiness": 35,
+        "shape": "wings",
         "capture_rate": 3,
         "types": [
             "ice",
@@ -6923,7 +9604,13 @@
         "abilities": [
             "pressure",
             "snow-cloak"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 144,
+            "level": null,
+            "item": null,
+            "evolution_chain": null
+        }
     },
     {
         "id": 145,
@@ -6933,6 +9620,7 @@
         "description": "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts.",
         "growth_rate": "slow",
         "base_happiness": 35,
+        "shape": "wings",
         "capture_rate": 3,
         "types": [
             "electric",
@@ -6971,7 +9659,13 @@
         "abilities": [
             "pressure",
             "static"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 145,
+            "level": null,
+            "item": null,
+            "evolution_chain": null
+        }
     },
     {
         "id": 146,
@@ -6981,6 +9675,7 @@
         "description": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.",
         "growth_rate": "slow",
         "base_happiness": 35,
+        "shape": "wings",
         "capture_rate": 3,
         "types": [
             "fire",
@@ -7019,7 +9714,13 @@
         "abilities": [
             "pressure",
             "flame-body"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 146,
+            "level": null,
+            "item": null,
+            "evolution_chain": null
+        }
     },
     {
         "id": 147,
@@ -7029,6 +9730,7 @@
         "description": "Long considered a mythical POKéMON until recently when a small colony was found living underwater.",
         "growth_rate": "slow",
         "base_happiness": 35,
+        "shape": "squiggle",
         "capture_rate": 45,
         "types": [
             "dragon"
@@ -7066,7 +9768,27 @@
         "abilities": [
             "shed-skin",
             "marvel-scale"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 147,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 148,
+                    "level": 30,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 149,
+                            "level": 55,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 148,
@@ -7076,6 +9798,7 @@
         "description": "A mystical POKéMON that exudes a gentle aura. Has the ability to change climate conditions.",
         "growth_rate": "slow",
         "base_happiness": 35,
+        "shape": "squiggle",
         "capture_rate": 45,
         "types": [
             "dragon"
@@ -7113,7 +9836,27 @@
         "abilities": [
             "shed-skin",
             "marvel-scale"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 147,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 148,
+                    "level": 30,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 149,
+                            "level": 55,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 149,
@@ -7123,6 +9866,7 @@
         "description": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans.",
         "growth_rate": "slow",
         "base_happiness": 35,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "dragon",
@@ -7161,7 +9905,27 @@
         "abilities": [
             "inner-focus",
             "multiscale"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 147,
+            "level": null,
+            "item": null,
+            "evolution_chain": [
+                {
+                    "pokemon_id": 148,
+                    "level": 30,
+                    "item": null,
+                    "evolution_chain": [
+                        {
+                            "pokemon_id": 149,
+                            "level": 55,
+                            "item": null,
+                            "evolution_chain": null
+                        }
+                    ]
+                }
+            ]
+        }
     },
     {
         "id": 150,
@@ -7171,6 +9935,7 @@
         "description": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.",
         "growth_rate": "slow",
         "base_happiness": 0,
+        "shape": "upright",
         "capture_rate": 3,
         "types": [
             "psychic"
@@ -7208,7 +9973,13 @@
         "abilities": [
             "pressure",
             "unnerve"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 150,
+            "level": null,
+            "item": null,
+            "evolution_chain": null
+        }
     },
     {
         "id": 151,
@@ -7218,6 +9989,7 @@
         "description": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.",
         "growth_rate": "medium-slow",
         "base_happiness": 100,
+        "shape": "upright",
         "capture_rate": 45,
         "types": [
             "psychic"
@@ -7254,6 +10026,12 @@
         ],
         "abilities": [
             "synchronize"
-        ]
+        ],
+        "evolution_chain": {
+            "pokemon_id": 151,
+            "level": null,
+            "item": null,
+            "evolution_chain": null
+        }
     }
 ]

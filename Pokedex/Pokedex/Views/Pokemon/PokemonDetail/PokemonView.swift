@@ -36,8 +36,6 @@ struct PokemonView: View {
                         .fontWeight(.bold)
                     
                     
-                    Button
-                    
                     Image(systemName: "speaker.wave.3")
                         .foregroundColor(.white)
                         .font(.title3)
