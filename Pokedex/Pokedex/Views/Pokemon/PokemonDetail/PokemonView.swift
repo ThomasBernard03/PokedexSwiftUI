@@ -13,6 +13,7 @@ struct PokemonView: View {
     
     let pokemon : Pokemon
     @State private var selectedTab = 0
+    @State private var showShinny =  false
     
     var body: some View {
         
@@ -68,14 +69,15 @@ struct PokemonView: View {
                     .offset(x: 0, y: 20)
                 
                 
-                AsyncImage(url: URL(string:pokemon.sprites.frontDefaultOfficialArtwork ?? "")) { image in
+                AsyncImage(url: URL(string:showShinny ? pokemon.sprites.frontShinyOfficialArtwork ?? "" : pokemon.sprites.frontDefaultOfficialArtwork)) { image in
                     image
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 200, height: 200)
+                        .onTapGesture {
+                            showShinny.toggle()
+                        }
                 } placeholder: { ProgressView()}
-                
-                
                     
             }
             .offset(x:0, y: 120)

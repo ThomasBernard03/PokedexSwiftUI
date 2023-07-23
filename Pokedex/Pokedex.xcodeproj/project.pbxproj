@@ -102,6 +102,13 @@
 			path = EvolutionChain;
 			sourceTree = "<group>";
 		};
+		813EB2DA2A6D3CF5005C552B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		8159B8C92A60842800DC1721 /* PokemonDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +216,7 @@
 		81D697152A501EF300D545D8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				813EB2DA2A6D3CF5005C552B /* Components */,
 				81B9B8F22A695B1E0002B63C /* Pokemon */,
 				81B9B8EF2A69363F0002B63C /* Item */,
 				81B9B8EA2A692C6A0002B63C /* Home */,
