@@ -12,7 +12,7 @@ import AVFoundation
 class PokemonViewModel {
     
     private var player = AVPlayer()
-    
+    private let pokemonService = PokemonService()
     
     
     func playPokemonSound(id : Int) {
@@ -27,8 +27,8 @@ class PokemonViewModel {
         player.play()
     }
     
-    func getPokemon(id : Int){
-        
+    func getPokemon(id : Int) -> Pokemon? {
+        return pokemonService.getPokemon(id: id)
     }
     
 }

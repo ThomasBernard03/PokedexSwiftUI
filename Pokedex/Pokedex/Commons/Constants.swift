@@ -29,5 +29,6 @@ struct Constants {
     
     struct Images {
         static let pokeballBackground = Image("PokeballBackground")
+        static let pokeballBackgroundDark = Image("PokeballBackgroundDark")
     }
 }

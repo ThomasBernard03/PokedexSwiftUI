@@ -10,7 +10,7 @@ import Foundation
 
 struct PokemonSprites : Decodable {
     
-    let frontDefaultOfficialArtwork : String?
+    let frontDefaultOfficialArtwork : String
     let frontShinyOfficialArtwork : String?
     
     private enum CodingKeys: String, CodingKey {
