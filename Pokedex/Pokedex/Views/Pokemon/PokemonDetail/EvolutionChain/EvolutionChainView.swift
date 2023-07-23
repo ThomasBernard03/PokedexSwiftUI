@@ -18,17 +18,24 @@ struct EvolutionChainView: View {
         
         HStack {
             
-            ZStack {
-                Constants.Images.pokeballBackgroundDark
-                    .resizable()
-                    .frame(width: 100, height: 100)
-                AsyncImage(url: URL(string: firstPokemon.sprites.frontDefaultOfficialArtwork)) { image in
-                    image
+            VStack {
+                ZStack {
+                    Constants.Images.pokeballBackgroundDark
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 120, height: 120)
-                } placeholder: { ProgressView()}
+                        .frame(width: 100, height: 100)
+                    AsyncImage(url: URL(string: firstPokemon.sprites.frontDefaultOfficialArtwork)) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 120, height: 120)
+                    } placeholder: { ProgressView()}
+                }
+                
+                Text(firstPokemon.name)
+                    .fontWeight(.bold)
             }
+            
+
             
             Spacer()
             
@@ -51,17 +58,24 @@ struct EvolutionChainView: View {
             
             Spacer()
             
-            ZStack {
-                Constants.Images.pokeballBackgroundDark
-                    .resizable()
-                    .frame(width: 100, height: 100)
-                AsyncImage(url: URL(string: secondPokemon.sprites.frontDefaultOfficialArtwork)) { image in
-                    image
+            VStack {
+                ZStack {
+                    Constants.Images.pokeballBackgroundDark
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 120, height: 120)
-                } placeholder: { ProgressView()}
+                        .frame(width: 100, height: 100)
+                    AsyncImage(url: URL(string: secondPokemon.sprites.frontDefaultOfficialArtwork)) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 120, height: 120)
+                    } placeholder: { ProgressView()}
+                }
+                
+                Text(secondPokemon.name)
+                    .fontWeight(.bold)
             }
+            
+
         }
     }
 }
