@@ -9,11 +9,11 @@ import Foundation
 import SwiftUI
 
 
-enum PokemonType : String, Decodable {
+enum Type : String, Decodable {
     case fire, grass, water, poison, flying, bug, normal, electric, ground, fairy, fighting, dragon, steel, rock, ice, psychic, ghost, dark
 }
 
-extension PokemonType {
+extension Type {
     func color() -> Color {
         switch self {
         case .fire:

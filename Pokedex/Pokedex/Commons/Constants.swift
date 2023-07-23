@@ -14,6 +14,7 @@ struct Constants {
     static let pokeAPIBaseUrl = "https://pokeapi.co/api/v2/"
     static let pokemonsJSONFilePath = "Pokemons"
     static let itemsJSONFilePath = "Items"
+    static let movesJSONFilePath = "Moves"
     
     
     

@@ -32,6 +32,7 @@ struct ItemItemView: View {
                         .frame(width: 60, height: 60)
                 } placeholder: {
                     ProgressView()
+                        .frame(width: 60, height: 60)
                 }
                 
                 

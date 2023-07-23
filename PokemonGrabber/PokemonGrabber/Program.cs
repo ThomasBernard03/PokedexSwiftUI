@@ -4,10 +4,60 @@ using Newtonsoft.Json;
 using PokemonGrabber;
 using PokemonGrabber.DTOs;
 using PokemonGrabber.DTOs.Items;
+using PokemonGrabber.DTOs.Moves;
+using PokemonGrabber.DTOs.Version;
 
 
-await GetAndSavePokemonsAsync();
+await GetVersionAsync();
+//await GetAndSavePokemonsAsync();
 //await GetAndSaveItemsAsync();
+
+async Task GetVersionAsync()
+{
+    Console.WriteLine("Starting...");
+    
+    var httpClient = new HttpClient();
+    var versionString = await httpClient.GetStringAsync("https://pokeapi.co/api/v2/generation/1");
+    
+    var serializedResponse = JsonConvert.DeserializeObject<VersionDto>(versionString);
+
+    var movesDto = new List<MoveDto>();
+    
+    foreach (var moveLink in serializedResponse.Moves)
+    {
+        var moveDto = await GetMoveAsync(url: moveLink.Url);
+        movesDto.Add(moveDto);
+    }
+
+
+    var moves = movesDto.Select(m => new Move()
+    {
+        Id = m.Id,
+        Name = m.Name,
+        Type = m.Type.Name,
+        Description = m.FlavorTextEntries.FirstOrDefault(x => x.Language.Name == "en").FlavorText.Replace("\n", " ").Replace("\f", " "),
+        Power = m.Power,
+        Accuracy = m.Accuracy,
+        PP = m.PP,
+        Priority = m.Priority,
+        Target = m.Target.Name,
+        DamageClass = m.DamageClass.Name
+    });
+    
+    Console.WriteLine("Saving moves...");
+    await File.WriteAllTextAsync("moves.json", JsonConvert.SerializeObject(moves));
+    Console.WriteLine("Moves saved into moves.json !");
+}
+
+async Task<MoveDto> GetMoveAsync(string url)
+{
+    var httpClient = new HttpClient();
+    var moveString = await httpClient.GetStringAsync(url);
+    
+    var serializedResponse = JsonConvert.DeserializeObject<MoveDto>(moveString);
+
+    return serializedResponse;
+}
 
 
 async Task GetAndSaveItemsAsync()
@@ -17,7 +67,6 @@ async Task GetAndSaveItemsAsync()
     var httpClient = new HttpClient();
     var itemsString = await httpClient.GetStringAsync("https://pokeapi.co/api/v2/item?limit=1000");
             
-    // Utilisez JsonConvert pour sérialiser la réponse
     var serializedResponse = JsonConvert.DeserializeObject<RootDto<LinkDto>>(itemsString);
     
     

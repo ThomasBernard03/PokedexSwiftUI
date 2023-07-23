@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PokemonTypeItemView: View {
     
-    let type: PokemonType
+    let type: Type
     
     var body: some View {
         Text(type.rawValue)
@@ -24,6 +24,6 @@ struct PokemonTypeItemView: View {
 
 struct PokemonTypeItemView_Previews: PreviewProvider {
     static var previews: some View {
-        PokemonTypeItemView(type:PokemonType.bug)
+        PokemonTypeItemView(type:Type.bug)
     }
 }

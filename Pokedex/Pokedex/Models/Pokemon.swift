@@ -11,7 +11,7 @@ struct Pokemon : Decodable, Identifiable {
     
     let id : Int
     let name : String
-    let types : [PokemonType]
+    let types : [Type]
     let description : String
     let height : Int
     let weight : Float
