@@ -46,9 +46,12 @@ extension Type {
             return Constants.Colors.ghostColor
         case .psychic:
             return Constants.Colors.psychicColor
-        
-        default:
-            return Constants.Colors.greyColor
+        case .dark:
+            return Constants.Colors.darkColor
+        case .flying:
+            return Constants.Colors.flyingColor
+        case .steel:
+            return Constants.Colors.steelColor
         }
     }
 }

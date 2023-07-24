@@ -92,7 +92,6 @@ struct PokemonView: View {
                     Text("About").tag(0)
                     Text("Stats").tag(1)
                     Text("Evolution").tag(2)
-                    Text("Moves").tag(3)
                     // Add more tabs as you wish
                 }
                 .pickerStyle(SegmentedPickerStyle())
@@ -113,10 +112,8 @@ struct PokemonView: View {
                         )
                     case 1:
                         PokemonStatView(stats: pokemon.stats)
-                    case 2 :
+                    default :
                         PokemonEvolutionView(evolutionChain: pokemon.evolutionChain)
-                    default:
-                        Text("Default Content")
                     }
                 }
                 

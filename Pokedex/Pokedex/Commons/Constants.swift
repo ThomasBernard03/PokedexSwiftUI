@@ -34,6 +34,9 @@ struct Constants {
         static let rockColor = Color("RockColor")
         static let ghostColor = Color("GhostColor")
         static let psychicColor = Color("PsychicColor")
+        static let darkColor = Color("DarkColor")
+        static let flyingColor = Color("FlyingColor")
+        static let steelColor = Color("SteelColor")
         
         static let greyColor = Color("GreyColor")
     }
