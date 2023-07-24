@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="=./Images/banner.png"/>
+<img src="Images/Banner.png"/>
 </p>
 
 <p align="center">
@@ -13,12 +13,18 @@
 </p>
 
 <p align="center">  
-I created this Pokédex to improve my design skills with the swift UI framework. For the entire user interface, I tried to reproduce the following pokédex: <a href="https://pokedex-dev.vercel.app/">https://pokedex-dev.vercel.app/</a>
+I created this Pokédex to improve my design skills with the swift UI framework. For the entire user interface, I tried to reproduce the pokédex of DamienToscano: <a href="https://pokedex-dev.vercel.app/">https://pokedex-dev.vercel.app/</a>
 </p>
 </br>
 
+<img src="/Images/demo.gif" align="right" width="320"/>
 
-
-
-https://github.com/ThomasBernard03/PokedexSwiftUI/assets/67638928/3ee1f4c8-3832-432b-aaa6-d1b7c50617ba
+## Resume
+- Swift 5
+- Swift UI 
+- MVVM
+- Images lazy loaded
+- Get all pokemons, moves, and items from JSON file
+- API grabber available in files :
+    I used a C# console application to retrieve all the data from the Poké API. I saved this data in JSON files. This avoided unnecessary calls.
 
