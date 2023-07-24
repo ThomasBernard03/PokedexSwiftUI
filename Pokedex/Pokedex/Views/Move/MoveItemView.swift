@@ -32,17 +32,43 @@ struct MoveItemView: View {
             HStack {
                 VStack {
                     if move.power != nil {
-                        MoveStatItemView(name: "Power", value: "\(move.power!)")
+                        HStack {
+                            MoveStatItemView(name: "Power", value: "\(move.power!)")
+                            Spacer()
+                        }
+                        
                     }
                     
                     if move.accuracy != nil {
-                        MoveStatItemView(name: "Accuracy", value: "\(move.accuracy!)")
+                        HStack {
+                            MoveStatItemView(name: "Accuracy", value: "\(move.accuracy!)")
+                            Spacer()
+                        }
+                        
                     }
                     
-                    MoveStatItemView(name: "PP", value: "\(move.pp)")
-                    MoveStatItemView(name: "PP", value: "\(move.priority)")
-                    MoveStatItemView(name: "PP", value: move.type.rawValue)
-                    MoveStatItemView(name: "PP", value: move.target)
+                    HStack {
+                        MoveStatItemView(name: "PP", value: "\(move.pp)")
+                        Spacer()
+                    }
+                    
+                    HStack {
+                        MoveStatItemView(name: "Priority", value: "\(move.priority)")
+                        Spacer()
+                    }
+                   
+                    HStack {
+                        MoveStatItemView(name: "Type", value: move.type.rawValue)
+                        Spacer()
+                    }
+                    
+                    HStack {
+                        MoveStatItemView(name: "Target", value: move.target)
+                        Spacer()
+                    }
+                    
+                    
+                    
                     
                     
                     Spacer()
@@ -54,7 +80,10 @@ struct MoveItemView: View {
                     Spacer()
                     move.type.image()
                         .resizable()
-                        .frame(width: 100, height: 100)                }
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100, height: 100)
+                    
+                }
             }
             
 
@@ -72,9 +101,14 @@ struct MoveItemView_Previews: PreviewProvider {
         
         let leechSeed = Move(id: 2, name: "Leech-seed", type: .grass, description: "Steals HP from the foe on every turn.", power: nil, accuracy: 90, pp: 10, priority: 0, damageClass: "status", target: "Selected pokemon")
         
-        VStack {
-            MoveItemView(move: tackle)
-            MoveItemView(move: leechSeed)
+        let firePunch = Move(id: 2, name: "fire-punch", type: .fire, description: "A fiery punch. May cause a burn.", power: 75, accuracy: 100, pp: 15, priority: 0, damageClass: "attack", target: "Selected pokemon")
+        
+        ScrollView {
+            VStack {
+                MoveItemView(move: tackle)
+                MoveItemView(move: leechSeed)
+                MoveItemView(move: firePunch)
+            }
         }
         .padding()
         
