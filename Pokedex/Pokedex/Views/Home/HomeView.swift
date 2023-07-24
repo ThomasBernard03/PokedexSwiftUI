@@ -16,8 +16,14 @@ struct HomeView: View {
                 NavigationLink(destination: PokemonsView()) {
                     HomeItemView(title: "Pokemons", color: Constants.Colors.grassColor)
                 }
+                
+                NavigationLink(destination: MovesView()) {
+                    HomeItemView(title: "Moves", color: Constants.Colors.fireColor)
+                }
 
-                HomeItemView(title: "Moves", color: Constants.Colors.fireColor)
+                
+                
+                
                 HomeItemView(title: "Abilities", color: Constants.Colors.waterColor)
                 
                 NavigationLink(destination: ItemsView()) {

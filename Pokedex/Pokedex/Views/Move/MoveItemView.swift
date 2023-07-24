@@ -29,24 +29,35 @@ struct MoveItemView: View {
                 Spacer()
             }
             
-            
             HStack {
-                if move.power != nil {
-                    MoveStatItemView(name: "Power", value: "\(move.power!)")
+                VStack {
+                    if move.power != nil {
+                        MoveStatItemView(name: "Power", value: "\(move.power!)")
+                    }
+                    
+                    if move.accuracy != nil {
+                        MoveStatItemView(name: "Accuracy", value: "\(move.accuracy!)")
+                    }
+                    
+                    MoveStatItemView(name: "PP", value: "\(move.pp)")
+                    MoveStatItemView(name: "PP", value: "\(move.priority)")
+                    MoveStatItemView(name: "PP", value: move.type.rawValue)
+                    MoveStatItemView(name: "PP", value: move.target)
+                    
+                    
+                    Spacer()
                 }
-                
-                if move.accuracy != nil {
-                    MoveStatItemView(name: "Accuracy", value: "\(move.accuracy!)")
-                }
-                
-                MoveStatItemView(name: "PP", value: "\(move.pp)")
-                MoveStatItemView(name: "PP", value: "\(move.priority)")
-                MoveStatItemView(name: "PP", value: move.type.rawValue)
-                MoveStatItemView(name: "PP", value: move.target)
-                
                 
                 Spacer()
+                
+                VStack {
+                    Spacer()
+                    move.type.image()
+                        .resizable()
+                        .frame(width: 100, height: 100)                }
             }
+            
+
         }
         .padding()
         .background(RoundedRectangle(cornerRadius: 8).stroke(move.type.color(), lineWidth: 4))

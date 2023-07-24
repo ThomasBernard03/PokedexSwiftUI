@@ -17,38 +17,83 @@ extension Type {
     func color() -> Color {
         switch self {
         case .fire:
-            return Color("FireColor")
+            return Constants.Colors.fireColor
         case .grass:
-            return Color("GrassColor")
+            return Constants.Colors.grassColor
         case .water:
-            return Color("WaterColor")
+            return Constants.Colors.waterColor
         case .electric:
-            return Color("ElectricColor")
+            return Constants.Colors.electricColor
         case .bug:
-            return Color("BugColor")
+            return Constants.Colors.bugColor
         case .normal:
-            return Color("NormalColor")
+            return Constants.Colors.normalColor
         case .poison:
-            return Color("PoisonColor")
+            return Constants.Colors.poisonColor
         case .ground:
-            return Color("GroundColor")
+            return Constants.Colors.groundColor
         case .fighting:
-            return Color("FightingColor")
+            return Constants.Colors.fightingColor
         case .fairy:
-            return Color("FairyColor")
+            return Constants.Colors.fairyColor
         case .dragon:
-            return Color("DragonColor")
+            return Constants.Colors.dragonColor
         case .ice:
-            return Color("IceColor")
+            return Constants.Colors.iceColor
         case .rock:
-            return Color("RockColor")
+            return Constants.Colors.rockColor
         case .ghost:
-            return Color("GhostColor")
+            return Constants.Colors.ghostColor
         case .psychic:
-            return Color("PsychicColor")
+            return Constants.Colors.psychicColor
         
         default:
-            return Color("GreyColor")
+            return Constants.Colors.greyColor
+        }
+    }
+}
+
+extension Type {
+    func image() -> Image {
+        switch self {
+        // Continue here
+            
+        case .normal:
+            return Constants.Images.normalImage
+        case .fire:
+            return Constants.Images.fireImage
+        case .water:
+            return Constants.Images.waterImage
+        case .electric:
+            return Constants.Images.electricImage
+        case .grass:
+            return Constants.Images.grassImage
+        case .ice:
+            return Constants.Images.iceImage
+        case .fighting:
+            return Constants.Images.fightingImage
+        case .poison:
+            return Constants.Images.poisonImage
+        case .ground:
+            return Constants.Images.groundImage
+        case .flying:
+            return Constants.Images.flyingImage
+        case .psychic:
+            return Constants.Images.psychicImage
+        case .bug:
+            return Constants.Images.bugImage
+        case .rock:
+            return Constants.Images.rockImage
+        case .ghost:
+            return Constants.Images.ghostImage
+        case .dragon:
+            return Constants.Images.dragonImage
+        case .dark:
+            return Constants.Images.darkImage
+        case .steel:
+            return Constants.Images.steelImage
+        case .fairy:
+            return Constants.Images.fairyImage        
         }
     }
 }

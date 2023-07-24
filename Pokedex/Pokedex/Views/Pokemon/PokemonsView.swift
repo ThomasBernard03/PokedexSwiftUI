@@ -50,7 +50,7 @@ struct PokemonsView: View {
                     .padding(.all, 20)
                 }
             }
-            .navigationTitle("Pokedex")
+            .navigationTitle("Pokemons")
             .navigationBarTitleDisplayMode(.automatic)
             .toolbar {
                 HStack {
