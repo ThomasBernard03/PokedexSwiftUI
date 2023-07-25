@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">  
-I created this Pokédex to improve my design skills with the swift UI framework. For the entire user interface, I tried to reproduce the pokédex of DamienToscano: <a href="https://pokedex-dev.vercel.app/">https://pokedex-dev.vercel.app/</a>
+I created this Pokedex to improve my design skills with the swift UI framework. For the entire user interface, I tried to reproduce the pokédex of DamienToscano: <a href="https://pokedex-dev.vercel.app/">https://pokedex-dev.vercel.app/</a>
 </p>
 </br>
 
